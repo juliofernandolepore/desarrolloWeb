@@ -1,7 +1,32 @@
-*{
-    color: green;
-}
-.nav{
-    color: grey
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #5dc9e2;        
+}
+ul{
+    flex-flow: row;
+}
+.texto {
+    font-family: 'roboto';
+    font-weight: 100;
+}
+li{
+    text-decoration: none;
+}
+.pegajoso{
+    position: sticky;
+    margin-top: 0;
+}
+.nav{   
+      
+    line-height: 1.6;
+    margin-top: 0;
+    border: 2px solid black;
+    
+}
+
+section{      
+    line-height: 1.6; 
 }
