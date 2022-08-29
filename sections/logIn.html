@@ -29,8 +29,30 @@
            </ul>
         </nav>
     </header>
-    <div class="registro">
-            <form action="registroForm">
+    
+        <section class="registro">
+            <h1><p>Iniciar Sesion</p></h1>
+            <form action="">
+                <p>
+                    <label for="usuario">Usuario</label> 
+                    <input id="usuario" type="text" name="usuario" placeholder="usuario/mail" minlength="5" maxlength="30">
+                </p>
+                <p>
+                    <label for="contraseña">Apellido</label> 
+                    <input type="password" id="contraseña" name="contraseña" placeholder="contraseña" required minlength="8" maxlength="16">
+                </p>
+                <button class="logIn">ingresar</button>
+                <div>
+                    <button class="recovery">olvide la contraseña</button>
+                </div> 
+            </form>                
+        </section>
+        
+
+        
+    <section class="registro">
+        <h2>registrarse</h2>
+            <form action="">
                 <p>
                     <label for="nombre">Nombres</label> 
                     <input id="nombre" type="text" name="" placeholder="Nombres" minlength="3" maxlength="30">
@@ -64,7 +86,7 @@
                 
                 <button>Enviar</button>
             </form>
-        </div>
+        </section>
 
     
 </body>

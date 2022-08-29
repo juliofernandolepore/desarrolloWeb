@@ -46,7 +46,11 @@ header {
 
 section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+section img, p {
+    justify-content: center;
 }
 
 footer {
@@ -76,21 +80,21 @@ img {
     margin-right: 10px ;
 }
 
-.divFormulario {
-    margin: auto;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-}
-
-.registroForm p {
-    margin: 50px;
+.registro {
+    width: 50%;
+    margin: 75px;
     padding: 50px;
-}
-
-.registro , button{
+    border: 3px black solid;    
     text-align: justify;
     font-size: 20px;
     font-weight: bold;
+}
+
+.registro h1, h2{
+    margin-bottom: 50px;
+}
+
+.registro input{
+    width: 45%;
+    
 }
