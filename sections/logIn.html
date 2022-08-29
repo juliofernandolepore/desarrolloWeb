@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class=""> 
+        <nav class="">
+           <ul class="contenedorUl">
+            <li>
+                <a href="../desarrolloWeb/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../desarrolloWeb/sections/proyecto.html">Proyecto</a>
+            </li>
+            <li>
+                <a href="../desarrolloWeb/sections/porfolio.html">Porfolio</a>
+            </li>
+            <li>
+                <a href="../desarrolloWeb/sections/consultas.html">Consultas</a>
+            </li>
+            <li>
+                <a href="../desarrolloWeb/sections/logIn.html">Log-in</a>
+            </li>
+           </ul>
+        </nav>
+    </header>
+    <div class="registro">
+            <form action="registroForm">
+                <p>
+                    <label for="nombre">Nombres</label> 
+                    <input id="nombre" type="text" name="" placeholder="Nombres" minlength="3" maxlength="30">
+                </p>
+                <p>
+                    <label for="apellido">Apellido</label> 
+                    <input type="text" id="apellido" name="" placeholder="Apellido" required minlength="2" maxlength="30">
+                </p>
+                <p>
+                    <label for="nombreUsuario">Usuario</label> 
+                    <input type="text" id="nombreUsuario"name="Usuario" placeholder="Fulanito2022" required minlength="10" maxlength="40">
+                </p>
+                <p>
+                    <label for="nacimiento">Fecha de nac.</label>    
+                    <input type="date" id="nacimiento"name="nacimiento" placeholder="dd/mm/aaaa">
+                </p>
+                <p>
+                    <label for="sexo">Género</label> 
+                    <select>
+                        <option value="masculino">M</option>
+                        <option value="femenino">F</option>
+                        <option value="lgtb">x</option>
+                    </select>
+                </p>
+                
+                
+                <p>
+                    <label for="correoElectronico">E-mail</label>    
+                    <input type="mail" name="correoElectronico" placeholder="user@mail.com" required maxlength="40">
+                </p>
+                
+                <button>Enviar</button>
+            </form>
+        </div>
+
+    
+</body>
+<footer>
+    <div class="footerClass"> 
+        <a href="https://www.facebook.com/" target="_blank">
+            <img class="icon" src="../img/facebook.png" alt="logo de facebook"></a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img class="icon" src="../img/youtube.png" alt="logo de youtube"></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank">    
+        <img class="icon" src="../img/instagram.png" alt="logo de instagram"></a>
+    </div>
+</html>

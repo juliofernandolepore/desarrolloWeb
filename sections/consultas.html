@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header class="pegajoso"> 
-        <nav class="nav">
-           <ul class="texto">
-               <li><a href="../index.html">inicio</a></li>
-               <li><a href="">novedades</a></li>
-               <li><a href="">detalle</a></li>               
-               <li><a href="consultas.html">consultas</a></li>
-               <li><a href="registroDeUsuario.html">Registrate</a></li>
+    <header class=""> 
+        <nav >
+           <ul class="contenedorUl"> 
+            <li>
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/sections/proyecto.html">Proyecto</a>
+            </li>
+            <li>
+                <a href="/sections/porfolio.html">Porfolio</a>
+            </li>
+            <li>
+                <a href="/sections/consultas.html">Consultas</a>
+            </li>
+            <li>
+                <a href="/sections/logIn.html">Log-in</a>
+            </li>
            </ul>
         </nav>
     </header>
-    <h1>CONTACTO</h1>   
     
-
-        <h2>Envia tu consulta</h2>
-            <div>
-                <form action="">
-                    <p>
+    <form action="">
+        <div class="divFormulario">
+            <p>
                 <label for="nombre">nombres</label> 
                 <input id="nombre" type="text" name="" placeholder="nombres" minlength="3" maxlength="30">
-                    </p>
+            </p>
             <p>
                 <label for="apellido">apellido</label> 
                 <input type="text" id="apellido" name="" placeholder="apellido" required minlength="2" maxlength="30">
@@ -42,18 +49,19 @@
                 <label for="consulta">envia tu consulta</label>
                 <textarea  name="consulta" rows="4" cols="50" placeholder="coloque aqui su consulta por favor"></textarea>
             </p>
-            <button>Enviar consulta         
-            </button>
-            </form>
-            </div>
-             </p>
-    </section>
+            <button>Enviar consulta</button>
+        </div>
+    </form>
+
+           
 </body>
-<footer class="">
-    <div class="">pie de pagina
-        <img src="" alt="logo de facebook">
-        <img src="" alt="logo de golang">
-        <img src="" alt="logo de instagram">
+<footer>
+    <div class="footerClass"> 
+        <a href="https://www.facebook.com/" target="_blank">
+            <img class="icon" src="../img/facebook.png" alt="logo de facebook"></a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img class="icon" src="../img/youtube.png" alt="logo de youtube"></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank">    
+        <img class="icon" src="../img/instagram.png" alt="logo de instagram"></a>
     </div>
-</footer>
 </html>
