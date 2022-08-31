@@ -176,3 +176,22 @@ footer {
     margin: 25px;
 }
 
+.freelance{
+    padding: 30px 10px;
+    background-color: #a19630;
+    text-align: center;
+}
+
+.aranceles{
+    margin: 15px 5px;
+    padding: 10px 0px ;
+    border: 4px solid #1f7e96 ;
+}
+.aranceles li {
+    margin: 15px 0px;
+    font-size: 30px;
+}
+
+.aranceles span {
+    font-weight: bold;
+}
