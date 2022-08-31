@@ -12,27 +12,28 @@
         <nav class="">
            <ul class="contenedorUl">
             <li>
-                <a href="../desarrolloWeb/index.html">Inicio</a>
+                <a href="../index.html">Inicio</a>
             </li>
             <li>
-                <a href="../desarrolloWeb/sections/proyecto.html">Proyecto</a>
+                <a href="../sections/proyecto.html">Proyecto</a>
             </li>
             <li>
-                <a href="../desarrolloWeb/sections/porfolio.html">Porfolio</a>
+                <a href="../sections/porfolio.html">Porfolio</a>
             </li>
             <li>
-                <a href="../desarrolloWeb/sections/consultas.html">Consultas</a>
+                <a href="../sections/consultas.html">Consultas</a>
             </li>
             <li>
-                <a href="../desarrolloWeb/sections/logIn.html">Log-in</a>
+                <a href="logIn.html">Log-in</a>
             </li>
            </ul>
         </nav>
     </header>
     
-        <section class="registro">
-            <h1><p>Iniciar Sesion</p></h1>
-            <form action="">
+        <section class="contenedorFormularios">
+            <div class="unicoFormulario">
+            <h1>Iniciar Sesion</h1>
+            <form action="" >
                 <p>
                     <label for="usuario">Usuario</label> 
                     <input id="usuario" type="text" name="usuario" placeholder="usuario/mail" minlength="5" maxlength="30">
@@ -45,13 +46,12 @@
                 <div>
                     <button class="recovery">olvide la contraseña</button>
                 </div> 
-            </form>                
-        </section>
-        
+            </form>              
+            </div>
 
         
-    <section class="registro">
-        <h2>registrarse</h2>
+        <div class="unicoFormulario">
+        <h2>Registrarse</h2>
             <form action="">
                 <p>
                     <label for="nombre">Nombres</label> 
@@ -84,8 +84,9 @@
                     <input type="mail" name="correoElectronico" placeholder="user@mail.com" required maxlength="40">
                 </p>
                 
-                <button>Enviar</button>
+                <button class="enviar">Enviar</button>
             </form>
+        </div>
         </section>
 
     
@@ -99,4 +100,5 @@
         <a href="https://www.instagram.com/?hl=es-la" target="_blank">    
         <img class="icon" src="../img/instagram.png" alt="logo de instagram"></a>
     </div>
+</footer>    
 </html>

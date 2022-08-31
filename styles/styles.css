@@ -2,20 +2,21 @@
 
 *{
     margin: 0;
-    padding: 0;                
+    padding: 0;                    
 }
 
-html , body {        
+html{        
     font-family: 'roboto', sans-serif;
     background-color: white;
-} 
-     
-ul li {
-    list-style-type: none; /* remueve los bullets*/
+    padding: 0;
+    margin: auto;   
+    
 }
-
-a{
-    text-decoration: none; /*remueve el subrayado*/
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
 
 header {
@@ -23,15 +24,21 @@ header {
     top: 0;
 }
 
+.home {
+    background-image: url('../img/golang.png');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+  }
 .contenedorUl {
     background-color: #1f7e96;
     width: 100%;
     height: 70px;    
-    margin: 0 auto;
-    border: 3px solid #0c8d87;    
+    margin-bottom: 35px auto;
+    border: 2px solid black;    
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;      
 }
@@ -40,33 +47,96 @@ header {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    color: white;
-    text-shadow: black ;    
+    color: white;         
+}
+.contenedorFormularios {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 45px 25px;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
+.contenedorFormularios p , button {
+    margin: 0px;
+    padding: 5px;    
 }
+
+.contenedorFormularios p {
+    height: auto;
+    width: auto;
+}
+
+.contenedorFormularios button {
+    border-radius: 30px;
+    margin: 5px 0px;
+    color: #1f7e96;
+}
+
+.contenedorFormularios input {
+    width: auto;
+}
+
+.unicoFormulario {
+    background-color: #0c8d87;
+    margin: 10px 5px ;        
+    border: 3px solid rgb(66, 88, 92);
+    text-align:justify;
+    padding: 20px;    
+    border-radius: 3%;
+    width: 400px;
+       
+}   
+
+.unicoFormulario button{
+    text-align: center; 
+    border: 2px solid black;
+    border-radius: 8%;
+    text-align: center;
+   
+}
+
+.unicoFormulario h1, h2 {    
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;   
+}
+
+.formularioConsulta {
+    background-color: #0c8d87;
+    display: flex;
+    flex-direction: row;
+    margin: auto;        
+    
+    text-align:start;
+    padding: 10px;   
+    width: auto;
+    height: auto;
+}
+
+.formularioConsulta p label , input {
+    height: 40px;
+    width: 100%;    
+    margin: 5px;
+    color: azure;
+    
+}
+
+.formularioConsulta textarea {
+    margin: 15px;
+    padding: 20px;
+    width: 100%;
+    color: azure;
+}
+
 
 section img, p {
     justify-content: center;
-}
+}       
 
-footer {
-        
-    width: 100%;   
-    background-color: #1f7e96;
-    border: 2px solid #0c8d87;         
-}
-
-.footerClass {
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
 
 .icon {     
     max-width: 45px;
@@ -80,21 +150,29 @@ img {
     margin-right: 10px ;
 }
 
-.registro {
-    width: 50%;
-    margin: 75px;
-    padding: 50px;
-    border: 3px black solid;    
-    text-align: justify;
-    font-size: 20px;
-    font-weight: bold;
+footer {                
+    padding: 15px;
+    margin-bottom: 0px;
+    width: 720;   
+    background-color: #1f7e96;
+    border: 2px solid #0c8d87; 
 }
 
-.registro h1, h2{
-    margin-bottom: 50px;
+.main{    
+    background-color: black;
+    padding: 30px;
+}
+.reposGit {    
+    height: 600px;
+    width: 100%;    
+    padding-left: 50px;   
+   
+}
+.reposGit h1, h2, a {    
+    color: azure;
+    font-size: larger;
+}
+.reposGit li , p {
+    margin: 25px;
 }
 
-.registro input{
-    width: 45%;
-    
-}
