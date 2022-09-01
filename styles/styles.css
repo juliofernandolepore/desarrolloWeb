@@ -206,20 +206,21 @@ footer {
 .contenedorImg {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     
 }
 .galeriaGo img {
     border: 3px solid #1f7e96;
     width: 35rem;
 }
- .contenedorImg p {    
+ .contenedorImg p:first-child {    
     font-size: 20px;
     font-weight: bold;
     border: 2px solid #a19630;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
+    background-color: rgb(189, 16, 16);
  }
 
 .home p {
@@ -230,6 +231,24 @@ footer {
 .abogado {
     color: rgb(13, 13, 86);
     height: 15px;
-} 
+}
 
+.analisis {    
+    border: 3px black solid;
+    background-color: #cdd3d2;
+    margin: 5px;
+    padding: 3px;
+    width: auto;
+    height: auto;
+}
+aside h5 , h6 {
+    margin: 15px 30px;
+    font-size: 30px;
+    color: #a19630;
+    text-decoration: solid;
+}
+iframe {
+    margin: 10px;
+    width: 300px;
+}
 
