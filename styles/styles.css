@@ -10,8 +10,12 @@ html{
     font-family: 'roboto', sans-serif;
     background-color: white;
     padding: 0;
-    margin: auto;   
-    
+    margin: auto;       
+}
+
+body {
+    display:grid;
+    grid-area: ;
 }
 ul li {
     list-style-type: none;
