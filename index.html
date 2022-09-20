@@ -1,152 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FerDevelop</title>
-    <link rel="stylesheet" href= "styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <header class="">
-        <nav class="">
-            <ul class="contenedorUl">
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./sections/servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="./sections/porfolio.html">Porfolio</a>
-                    </li>
-                    <li>
-                        <a href="./sections/consultas.html">Consultas</a>
-                    </li>
-                    <li>
-                        <a href="./sections/logIn.html">Log-in</a>
-                    </li>
-            </ul>
-        </nav> 
-    </header> 
-    
-    <main class="home">
-        <h1><p class="">Fernando FerDevelop Webpage</p></h1>
-        <h2><p class="">Novedades del dia: "Golang v.1.19"</p></h2>
-    <section class="galeriaGo">
-                
-        <div class="contenedorImg">
-            <div><p>test rendimiento Go vs Php Moderno</p></div>
-            <p class="analisis">segun se observa en la imagen, la sobre carga del servidor
-                en el plazo de una semana, refleja diferencias notables en el
-                uso de nucles y carga en la memoria ram del servidor.
-            </p>
-            <img src="./img/png/phpVSgo-min.png" alt="rendimiento comparativo go vs php">
-        </div>
 
-        <div class="contenedorImg">
-            <div><p>declaracion de variables</p></div>
-            <p class="analisis">existen 2 formas de declarar variables,
-                la forma simplificada que autodetecta el tipo de datos, nombre de la
-                variable seguido de <code> := </code>y el valor de la literal, se pueden declarar
-                multiples variables en una sola linea.
-                La otra declaracion de variable es propia de la sintaxis de c,
-                <code> var variable1 string = "hola"</code>, aun asi puede declarar con valor null.
-                La ventaja de establecer el tipo de dato que contendra la variable, previene
-                bugs, errores de compilacion y un codigo mas legible.
-            </p>
-            <img src="./img/png/variables-min.png" alt="declaracion de variables">
-        </div>
+<body class="contenedorGrid">
+    <header>
+        <nav class="navbar navbar-expand-lg  colorFondo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./sections/servicios.html">Servicios</a>
+                        <a class="nav-link" href="./sections/porfolio.html">Porfolio</a>
+                        <a class="nav-link" href="./sections/login.html">Login</a>
+                        <a class="nav-link" href="./sections/registro.html">Resgitro</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-success p-2 text-dark bg-opacity-50">
 
-        <div class="contenedorImg">
-            <div><p>estructura switch</p></div>
-            <p class="analisis"> la estructura switch es utilizada en multiples lenguajes,
-                simplifica una sintaxis abultada de condicionadas <code>if-else</code> anidadas,
-                siempre siendo necesario el uso de <code> break </code> para salir de la iteracion.
-            </p>
-            <img src="./img/png/switch-min.png" alt="estructura swicth">
-            
-        </div>
+    </main>
 
-        <div class="contenedorImg">
-            <div><p>Struct (Estructuras)</p></div>
-            <p class="analisis"> Struct nos sirve para definir tipos de datos mas precisamente
-                una coleccion, se asemeja a las Clases en otros lenguajes (POO), nos ahorra
-                tiempos de escrituras, mejora la calidad del codigo y evita errores.
-            </p>
-            <img src="./img/png/struct-min.png" alt="struct en go">
-        </div>
-
-        <div class="contenedorImg">
-            <div><p>Punteros en Go (pointers)</p></div>
-            <p class="analisis">Los punteros son apuntadores que su funcion en este como otros lenguajes como C o C++ que
-                la memoria sea optimizada al ser referenciadas a un mismo punto de memoria ram para distintas
-                variables o funciones por ejemplo
-            </p>
-        <img src="./img/png/pointers-min.png" alt="punteros en go">
-        </div>
-
-        <div class="contenedorImg">
-            <div><p>Iteraciones con el metodo Range</p></div>
-            <p class="analisis">El metodo range permite recorrer un arreglo o coleccion
-                proporcionamos "clave y valor", y retorna indices con los valores
-                que requerimos. Es un metodo muy util que no descarta el uso de iterador
-                <code>for</code>.
-            </p>
-            <img src="./img/png/range-min.png" alt="metodo Range">
-        </div>           
-        </section>   
-</main> 
-<article>
-    <aside>
-        <h5>Mentores</h5>
-        <h6>Links de interes</h6>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vacXj46S0Ew" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_6Kvp03srKc" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pGSI1o1K7FU" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <iframe width="400" src="https://www.youtube.com/embed/mjVhZaDi80M" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CL5-7PjKnVM" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-     </aside> 
-</article>
-      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
-<footer>
-    <div class="footerClass">
+<footer class="footerClass d-flex flex-row mb-3">
+    <div>
         <a href="https://github.com/FerDevelop" target="_blank">
             <img class="icon" src="../desarrolloWeb/img/GitHub.png" alt="logo de github"></a>
         <a href="https://gitlab.com/juliofernandolepore" target="_blank">
             <img class="icon" src="../desarrolloWeb/img/gitlab.png" alt="logo de github"></a>
         <a href="https://bitbucket.org/ferdevar/" target="_blank">
-            <img class="icon" src="../desarrolloWeb/img/bibucket.png" alt="logo de github"></a>                   
+            <img class="icon" src="../desarrolloWeb/img/bibucket.png" alt="logo de github"></a>
         <a href="https://www.linkedin.com/in/juliofernandolepore/" target="_blank">
-            <img class="icon" src="../desarrolloWeb/img/LinkedIn.png" alt="logo de linkedin"></a> 
+            <img class="icon" src="../desarrolloWeb/img/LinkedIn.png" alt="logo de linkedin"></a>
         <a href="https://www.facebook.com/" target="_blank">
             <img class="icon" src="../desarrolloWeb/img/facebook.png" alt="logo de facebook"></a>
         <a href="https://www.youtube.com/" target="_blank">
             <img class="icon" src="../desarrolloWeb/img/youtube.png" alt="logo de youtube"></a>
-        <a href="https://go.dev/" target="_blank">    
-        <img class="icon" src="../desarrolloWeb/img/gofer.png" alt="logo de gofer"></a>
-    </div>       
-    
+        <a href="https://go.dev/" target="_blank">
+            <img class="icon" src="../desarrolloWeb/img/gofer.png" alt="logo de gofer"></a>
+    </div>
+
 </footer>
+
 </html>
