@@ -125,3 +125,12 @@ a {
     padding: 2rem;
     margin: 3rem;
 }
+
+.colorBotonPred {
+    background-color: rgb(15, 97, 98)
+}
+
+.colorBotonPred:hover {
+    background-color: rgb(12, 62, 60);
+    transition: 1s;
+}
