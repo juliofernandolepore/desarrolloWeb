@@ -23,8 +23,7 @@ a {
 
 }
 
-.colorFondo {
-    height: 5rem;
+.colorFondo {    
     background-color: rgb(15, 97, 98);
     transition: 2s;
 
@@ -36,9 +35,28 @@ a {
 
 }
 
+.efectoFondo2{
+   transition: 1s; 
+}
+
+.efectoFondo2:hover{
+    border: 0.1rem solid white;
+    background-color: rgb(15, 97, 98);
+    border-radius: 5%;        
+}
+
+.efectoFondo3 a {
+    transition: 1s;
+    color:white;
+}
+
+.efectoFondo3 a:hover {
+    color: black;   
+}
+
+
 .footerClass div {
-    height: auto;
-    
+    height: auto;    
 }
 
 .icon {
@@ -80,4 +98,30 @@ a {
     color: white;    
 }
 
+.repos {
+    text-align: justify;
+    padding: auto;
+    display: grid;   
+    gap: 0.1rem;
+    grid-template-columns: 2,1fr;
+    grid-template-areas: 
+    "gitHub otrosRepos"
+    ;
+}
+
+.repos h1 a {
+    color: black;
+}
+
  
+.gitHubRepos {
+    grid-area: gitHub;
+    padding: 2rem;
+    margin: 3rem;
+}
+
+.otrosRepos {
+    grid-area: otrosRepos;
+    padding: 2rem;
+    margin: 3rem;
+}
