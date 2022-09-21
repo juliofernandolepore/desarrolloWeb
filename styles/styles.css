@@ -9,6 +9,7 @@
 ul li {
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -17,13 +18,13 @@ a {
     padding: 8rem 2rem;
 }
 
-.footerClass {    
+.footerClass {
     background-color: rgb(15, 97, 98);
     height: auto;
 
 }
 
-.colorFondo {    
+.colorFondo {
     background-color: rgb(15, 97, 98);
     transition: 2s;
 
@@ -35,58 +36,58 @@ a {
 
 }
 
-.efectoFondo2{
-   transition: 1s; 
+.efectoFondo2 {
+    transition: 1s;
 }
 
-.efectoFondo2:hover{
+.efectoFondo2:hover {
     border: 0.1rem solid white;
     background-color: rgb(15, 97, 98);
-    border-radius: 5%;        
+    border-radius: 5%;
 }
 
 .efectoFondo3 a {
     transition: 1s;
-    color:white;
+    color: white;
 }
 
 .efectoFondo3 a:hover {
-    color: black;   
+    color: black;
 }
 
 
 .footerClass div {
-    height: auto;    
+    height: auto;
 }
 
 .icon {
-    padding: 0.5;
-    margin: 1rem;
-    width: 4rem;
+    padding: 5px;
+    margin: 5px;
+    width: 3rem;
     transition: 1s, border 0.5s;
 }
 
 .icon:hover {
     border-bottom: 3px solid white;
     padding: auto;
-    width: 2.5rem;
+    width: 2rem;
 }
+
 .gridServ {
-    
     display: grid;
-    grid-template-columns: (2,1fr);
-    grid-template-rows: (2,1fr);
-    column-gap: 1rem;    
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (2, 1fr);
+    column-gap: 1rem;
     grid-template-areas:
-    "honorarios honorarios"
-    "servicios servicios"
-    "developer abogado"    
+        "honorarios honorarios"
+        "servicios servicios"
+        "developer abogado"
     ;
 }
 
 .servicios {
     grid-area: servicios;
-    
+
 }
 
 .arancelesAb {
@@ -94,25 +95,25 @@ a {
     font-size: medium;
     color: white;
     padding: 1rem;
-    text-align: start;    
+    text-align: start;
 }
 
-.arancelesDev{
+.arancelesDev {
     grid-area: developer;
     font-size: medium;
     color: white;
     padding: 1rem;
-    text-align: start;     
+    text-align: start;
 }
 
 .repos {
     text-align: justify;
     padding: auto;
-    display: grid;   
+    display: grid;
     gap: 0.1rem;
-    grid-template-columns: 2,1fr;
-    grid-template-areas: 
-    "gitHub otrosRepos"
+    grid-template-columns: 2, 1fr;
+    grid-template-areas:
+        "gitHub otrosRepos"
     ;
 }
 
@@ -120,7 +121,7 @@ a {
     color: black;
 }
 
- 
+
 .gitHubRepos {
     grid-area: gitHub;
     padding: 2rem;
@@ -142,69 +143,157 @@ a {
     transition: 1s;
 }
 
-.dimensionImg img {
-    width: auto;
-    max-width: 300px;
-    min-width: 150px;
-}
-
 .honorarios {
     text-align: center;
 }
 
-@media (max-width: 800px){
-.repos {    
-    padding: 3px;
-    grid-template-columns: 1,1fr;
-    row-gap: 5px;
-    grid-template-areas: 
-    "gitHub"
-    "otrosRepos"
-    ;
-    width: auto;
-    gap: 0;
-}
-.gitHubRepos{    
-    padding: 3px;
-    height: auto;
-    text-align: start;
-}
-.otrosRepos{    
-    padding:3px;
-    height: auto;
-    text-align: start; 
-
-}
-.gridServ {    
-    display: grid;
-    grid-template-columns: (1,1fr);
-    grid-template-rows: (4,1fr);    
-    column-gap: 1rem;    
-    grid-template-areas:
-    "honorarios"
-    "servicios"
-    "developer" 
-    "abogado"    
-    ;
-}
-
-.servicios {
-    grid-area: servicios;
+@media (max-width: 800px) {
+    * main {
+        background-color: rgb(10, 74, 68);
+    }
+    * main h1, h2, h2 a, h3 , h4, h5, ul a, li a {
+        color: white;
+    }    
+    .navbar-brand a , .colorFondo a{
+        color: white;
+    }
     
+    .repos {
+        padding: 3px;
+        grid-template-columns: 1, 1fr;
+        row-gap: 5px;
+        grid-template-areas:
+            "gitHub"
+            "otrosRepos"
+        ;
+        width: auto;
+        gap: 0;
+    }
+    .repos ul li a {
+        font-size: 2rem;
+    }
+
+    .gitHubRepos {
+        padding: 3px;
+        height: auto;
+        text-align: start;
+    }
+
+    .otrosRepos {
+        padding: 3px;
+        height: auto;
+        text-align: start;
+
+    }
+
+    .gridServ {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        column-gap: 1rem;
+        grid-template-areas:
+            "honorarios"
+            "servicios"
+            "developer"
+            "abogado"
+        ;
+    }
+
+    .servicios {
+        grid-area: servicios;
+
+    }
+
+    .arancelesAb {
+        grid-area: abogado;
+        color: white;
+        padding: 1rem;
+        text-align: start;
+    }
+
+    .arancelesDev {
+        grid-area: developer;
+        color: white;
+        padding: 1rem;
+        text-align: start;
+    }
+
 }
 
-.arancelesAb {
-    grid-area: abogado;    
-    color: white;
-    padding: 1rem;
-    text-align: start;    
-}
+@media (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    * main {
+        background-color: rgb(10, 74, 68);
+    }
+    * main h1, h2, h2 a, h3 , h4, h5, ul a, li a {
+        color: white;
+    }    
+    .navbar-brand a , .colorFondo a{
+        color: white;
+    }
 
-.arancelesDev{
-    grid-area: developer;    
-    color: white;
-    padding: 1rem;
-    text-align: start;     
-}
+    .repos {
+        padding: 2px;
+        grid-template-columns: 1, 1fr;
+        row-gap: 2px;
+        grid-template-areas:
+            "gitHub"
+            "otrosRepos"
+        ;
+        width: auto;
+        gap: 0;
+    }
+    .repos ul li a {
+        font-size: 1.5rem;
+    }
+
+    .gitHubRepos {
+        padding: 1px;
+        height: auto;
+        text-align: start;
+    }
+
+    .otrosRepos {
+        padding: 1px;
+        height: auto;
+        text-align: start;
+
+    }
+
+    .gridServ {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (4, 1fr);
+        column-gap: 1rem;
+        grid-template-areas:
+            "honorarios"
+            "servicios"
+            "developer"
+            "abogado"
+        ;
+    }
+
+    .servicios {
+        grid-area: servicios;
+
+    }
+
+    .arancelesAb {
+        grid-area: abogado;
+        color: white;
+        padding: 2px;
+        text-align: start;
+    }
+
+    .arancelesDev {
+        grid-area: developer;
+        color: white;
+        padding: 2px;
+        text-align: start;
+    }
 
 }
