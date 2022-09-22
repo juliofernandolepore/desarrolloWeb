@@ -14,6 +14,24 @@ a {
     text-decoration: none;
 }
 
+.gradientDesktop {
+    background: rgb(55, 133, 99);
+    background: -moz-linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
+    background: -webkit-linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
+    background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
+
+}
+
+
+.gradientMobile800 {
+    background: rgb(0, 8, 4);
+    background: -moz-linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
+    background: linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
+}
+
 .registro {
     padding: 8rem 2rem;
 }
@@ -148,16 +166,13 @@ a {
 }
 
 @media (max-width: 800px) {
-    * main {
-        background-color: rgb(10, 74, 68);
+
+    section .gradientMobile800 .navbar-brand a,
+
+    .colorFondo a {
+        color: black;
     }
-    * main h1, h2, h2 a, h3 , h4, h5, ul a, li a {
-        color: white;
-    }    
-    .navbar-brand a , .colorFondo a{
-        color: white;
-    }
-    
+
     .repos {
         padding: 3px;
         grid-template-columns: 1, 1fr;
@@ -169,6 +184,7 @@ a {
         width: auto;
         gap: 0;
     }
+
     .repos ul li a {
         font-size: 2rem;
     }
@@ -206,35 +222,33 @@ a {
 
     .arancelesAb {
         grid-area: abogado;
-        color: white;
+        color: black;
         padding: 1rem;
         text-align: start;
+        font-size: x-large;
     }
 
     .arancelesDev {
         grid-area: developer;
-        color: white;
+        color: black;
         padding: 1rem;
         text-align: start;
+        font-size: x-large;
     }
 
 }
 
-@media (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 412px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    * main {
-        background-color: rgb(10, 74, 68);
-    }
-    * main h1, h2, h2 a, h3 , h4, h5, ul a, li a {
+
+    .navbar-brand a,
+    .colorFondo a {
         color: white;
     }    
-    .navbar-brand a , .colorFondo a{
-        color: white;
-    }
 
     .repos {
         padding: 2px;
@@ -247,6 +261,7 @@ a {
         width: auto;
         gap: 0;
     }
+
     .repos ul li a {
         font-size: 1.5rem;
     }
