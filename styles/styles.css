@@ -48,16 +48,66 @@ a {
     max-width: 350px;
     border: 3px solid black;
     transition: 1.5s;
-    
+
 }
 
-.youtube:hover{
+.youtube:hover {
     border-radius: 12%;
     border: 3px white solid;
-    
-    
-
 }
+
+/* SECCION DEL CSS PARA ANIMACIONES */
+
+.news li p {
+    font-weight: bold;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.news li p:hover {
+    color: red;
+    padding-left: 25px;
+    border-left: 5px solid red;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.news h1, .mentors {
+    text-align: center;
+    text-transform: capitalize;
+    animation-duration: 5s;
+    animation-name: changeColor;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeColor {
+    from {
+        color: rgb(20, 49, 192);
+        padding: 0px 1px;
+        margin: 0px 1px;
+    }
+
+    to {
+        color: rgb(26, 35, 35);
+        padding: 0px 1px;
+        margin: 0px 1px;
+        
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 
 .registro {
     padding: 8rem 2rem;
