@@ -39,7 +39,18 @@
 
     <main class=" bg-success p-2 text-dark gradientDesktop">
         <form class="row g-3 registro">
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <label for="validationServerUsername" class="form-label">Nombre de Usuario</label>
+                <div class="input-group has-validation">
+
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Por favor elije un nombre de usuario.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
                 <label for="mail" class="form-label">correo electronico</label>
                 <input type="email" class="form-control is-valid" id="mail" value="juanfernandez@mail.com" required>
 
@@ -58,23 +69,21 @@
                     Correcto!
                 </div>
             </div>
+            
             <div class="col-md-4">
-                <label for="validationServerUsername" class="form-label">Nombre de Usuario</label>
-                <div class="input-group has-validation">
-
-                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
-                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                        Por favor elije un nombre de usuario.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
                 <label for="validationServer03" class="form-label">Ciudad</label>
                 <input type="text" class="form-control is-invalid" id="validationServer03"
                     aria-describedby="validationServer03Feedback" required>
                 <div id="validationServer03Feedback" class="invalid-feedback">
                     Por favor introduzca una ciudad existente.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05"
+                    aria-describedby="validationServer05Feedback" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    Por favor introduzca un codigo postal existente.
                 </div>
             </div>
             <div class="col-md-3">
@@ -91,14 +100,7 @@
                     Por favor introduzca una provincia.
                 </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationServer05" class="form-label">Codigo Postal</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05"
-                    aria-describedby="validationServer05Feedback" required>
-                <div id="validationServer05Feedback" class="invalid-feedback">
-                    Por favor introduzca un codigo postal existente.
-                </div>
-            </div>
+           
             <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
@@ -112,7 +114,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <button class="btn btn-primary colorBotonPred" type="submit">Registrame</button>
+                <button class="btn btn-primary colorBotonPred btn-lg" type="submit">Registrame</button>
             </div>
         </form>
         </div>
