@@ -66,13 +66,17 @@ a {
 
 .news li p:hover {
     color: red;
-    padding-left: 25px;
+    padding-left: 50%;
     border-left: 5px solid red;
-    transition: 1s;
+    transition: 1.5s;
     text-transform: uppercase;
+    font-weight: 1200;
 }
 
-.news h1, .mentors {
+.news h1,
+.mentors,
+span,
+blockquote a {
     text-align: center;
     text-transform: capitalize;
     animation-duration: 5s;
@@ -81,9 +85,19 @@ a {
     animation-direction: alternate;
 }
 
+.news div {
+    margin: 40px;
+    padding: 40px;
+}
+
+.news div p {
+    padding: 5px 30px;
+
+}
+
 @keyframes changeColor {
     from {
-        color: rgb(20, 49, 192);
+        color: rgb(243, 244, 248);
         padding: 0px 1px;
         margin: 0px 1px;
     }
@@ -92,7 +106,7 @@ a {
         color: rgb(26, 35, 35);
         padding: 0px 1px;
         margin: 0px 1px;
-        
+
     }
 }
 
