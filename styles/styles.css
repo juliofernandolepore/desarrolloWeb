@@ -1,419 +1,440 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+
+/*   ************************************************ only TAGS ******************************************************** */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {  
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.gradientDesktop {
-    background: rgb(55, 133, 99);
-    background: -moz-linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
-    background: -webkit-linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
-    background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256302521008) 0%, rgba(55, 133, 99, 0.8323704481792717) 27%, rgba(169, 237, 218, 1) 84%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
 
+/*     ****************************************************** solo gradients ******************************************************** */
+
+
+.gradientDesktop {   
+
+  background: rgb(55, 133, 99);
+  background: -moz-linear-gradient(
+    50deg,
+    rgba(55, 133, 99, 0.7203256302521008) 0%,
+    rgba(55, 133, 99, 0.8323704481792717) 27%,
+    rgba(169, 237, 218, 1) 84%
+  );
+  background: -webkit-linear-gradient(
+    50deg,
+    rgba(55, 133, 99, 0.7203256302521008) 0%,
+    rgba(55, 133, 99, 0.8323704481792717) 27%,
+    rgba(169, 237, 218, 1) 84%
+  );
+  background: linear-gradient(
+    50deg,
+    rgba(55, 133, 99, 0.7203256302521008) 0%,
+    rgba(55, 133, 99, 0.8323704481792717) 27%,
+    rgba(169, 237, 218, 1) 84%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
 }
-
 
 .gradientMobile800 {
-    background: rgb(0, 8, 4);
-    background: -moz-linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
-    background: -webkit-linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
-    background: linear-gradient(0deg, rgba(0, 8, 4, 0.9416141456582633) 8%, rgba(163, 193, 173, 1) 91%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
+  background: rgb(0, 8, 4);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 8, 4, 0.9416141456582633) 8%,
+    rgba(163, 193, 173, 1) 91%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 8, 4, 0.9416141456582633) 8%,
+    rgba(163, 193, 173, 1) 91%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 8, 4, 0.9416141456582633) 8%,
+    rgba(163, 193, 173, 1) 91%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
 }
 
-.mentors {
-    text-align: center;
-    margin: auto;
+/*  *********************************************************************** only CLASS ************************************************************** */
 
+.mentors {
+  text-align: center;
+  margin: auto;
 }
 
 .video section {
-    padding: auto;
+  padding: auto;
 }
 
 .youtube {
-    margin: 5px;
-    max-height: 200px;
-    max-width: 350px;
-    border: 3px solid black;
-    transition: 1.5s;
-
+  margin: 5px;
+  max-height: 200px;
+  max-width: 350px;
+  border: 3px solid black;
+  transition: 1.5s;
 }
 
 .youtube:hover {
-    border-radius: 12%;
-    border: 3px white solid;
+  border-radius: 12%;
+  border: 3px white solid;
 }
 
-/* SECCION DEL CSS PARA ANIMACIONES */
-
 .news li p {
-    font-weight: bold;
-    animation-duration: 4s;
-    animation-name: slidein;
+  font-weight: bold;
+  animation-duration: 4s;
+  animation-name: slidein;
 }
 
 .news li p:hover {
-    color: red;
-    padding-left: 50%;
-    border-left: 5px solid red;
-    transition: 1.5s;
-    text-transform: uppercase;
-    font-weight: 1200;
+  color: red;
+  padding-left: 50%;
+  border-left: 5px solid red;
+  transition: 1.5s;
+  text-transform: uppercase;
+  font-weight: 1200;
 }
 
 .news h1,
 .mentors,
-span,
-blockquote a {
-    text-align: center;
-    text-transform: capitalize;
-    animation-duration: 5s;
-    animation-name: changeColor;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+span {
+  text-align: center;
+  text-transform: capitalize;
+  animation-duration: 5s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.news h1, .mentors, span {
+    font-weight: bolder;
 }
 
 .news div {
-    margin: 40px;
-    padding: 40px;
+  margin: 40px;
+  padding: 40px;
 }
 
 .news div p {
-    padding: 5px 30px;
-
+  padding: 5px 30px;
 }
-
-@keyframes changeColor {
-    from {
-        color: rgb(243, 244, 248);
-        padding: 0px 1px;
-        margin: 0px 1px;
-    }
-
-    to {
-        color: rgb(26, 35, 35);
-        padding: 0px 1px;
-        margin: 0px 1px;
-
-    }
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 
 .registro {
-    padding: 8rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .footerClass {
-    background-color: rgb(15, 97, 98);
-    height: auto;
-
+  background-color: rgb(15, 97, 98);
+  height: auto;
 }
 
 .colorFondo {
-    background-color: rgb(15, 97, 98);
-    transition: 2s;
-
+  background-color: rgb(15, 97, 98);
+  transition: 2s;
 }
 
 .colorFondo a:hover {
-    border-bottom: 3px solid white;
-    color: white;
-
+  border-bottom: 3px solid white;
+  color: white;
 }
 
 .efectoFondo2 {
-    transition: 1s;
+  transition: 1s;
 }
 
 .efectoFondo2:hover {
-    border: 0.1rem solid white;
-    background-color: rgb(15, 97, 98);
-    border-radius: 5%;
+  border: 0.1rem solid white;
+  background-color: rgb(15, 97, 98);
+  border-radius: 5%;
 }
 
 .efectoFondo3 a {
-    transition: 1s;
-    color: white;
+  transition: 1s;
+  color: white;
 }
 
 .efectoFondo3 a:hover {
-    color: black;
+  color: black;
 }
 
-
 .footerClass div {
-    height: auto;
+  height: auto;
 }
 
 .icon {
-    padding: 5px;
-    margin: 5px;
-    width: 3rem;
-    transition: 1s, border 0.5s;
+  padding: 5px;
+  margin: 5px;
+  width: 3rem;
+  transition: 1s, border 0.5s;
 }
 
 .icon:hover {
-    border-bottom: 3px solid white;
-    padding: auto;
-    width: 2rem;
+  border-bottom: 3px solid white;
+  padding: auto;
+  width: 2rem;
 }
 
 .gridServ {
-    display: grid;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: (2, 1fr);
-    column-gap: 1rem;
-    grid-template-areas:
-        "honorarios honorarios"
-        "servicios servicios"
-        "developer abogado"
-    ;
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (2, 1fr);
+  column-gap: 1rem;
+  grid-template-areas:
+    "honorarios honorarios"
+    "servicios servicios"
+    "developer abogado";
 }
 
 .servicios {
-    grid-area: servicios;
-
+  grid-area: servicios;
 }
 
 .arancelesAb {
-    grid-area: abogado;
-    font-size: medium;
-    color: white;
-    padding: 1rem;
-    text-align: start;
+  grid-area: abogado;
+  font-size: medium;
+  color: white;
+  padding: 1rem;
+  text-align: start;
 }
 
 .arancelesDev {
-    grid-area: developer;
-    font-size: medium;
-    color: white;
-    padding: 1rem;
-    text-align: start;
+  grid-area: developer;
+  font-size: medium;
+  color: white;
+  padding: 1rem;
+  text-align: start;
 }
 
 .repos {
-    text-align: justify;
-    padding: auto;
-    display: grid;
-    gap: 0.1rem;
-    grid-template-columns: 2, 1fr;
-    grid-template-areas:
-        "gitHub otrosRepos"
-    ;
+  text-align: justify;
+  padding: auto;
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: "gitHub otrosRepos";
 }
 
 .repos h1 a {
-    color: black;
+  color: black;
 }
 
-
 .gitHubRepos {
-    grid-area: gitHub;
-    padding: 2rem;
-    margin: 3rem;
+  grid-area: gitHub;
+  padding: 2rem;
+  margin: 3rem;
 }
 
 .otrosRepos {
-    grid-area: otrosRepos;
-    padding: 2rem;
-    margin: 3rem;
+  grid-area: otrosRepos;
+  padding: 2rem;
+  margin: 3rem;
 }
 
 .colorBotonPred {
-    background-color: rgb(15, 97, 98)
+  background-color: rgb(15, 97, 98);
 }
 
 .colorBotonPred:hover {
-    background-color: rgb(12, 62, 60);
-    transition: 1s;
+  background-color: rgb(12, 62, 60);
+  transition: 1s;
 }
 
 .honorarios {
-    text-align: center;
+  text-align: center;
 }
 
+/*                 ****************************************       seccion de animaciones        *****************************************************************             */
+
+@keyframes changeColor {
+  from {
+    color: rgb(243, 244, 248);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+
+  to {
+    color: rgb(26, 35, 35);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*  ***************************************************En esta seccion comienzan las media queries  *********************************************  */
+/* ****** hasta un ancho maximo de 800px ******* */
 
 @media (max-width: 800px) {
+  section .gradientMobile800 .navbar-brand a,
+  .colorFondo a {
+    color: black;
+  }
 
-    section .gradientMobile800 .navbar-brand a,
+  .youtube {
+    width: 700px;
+    margin: 5px;
+    padding: auto;
+  }
 
-    .colorFondo a {
-        color: black;
-    }
+  .repos {
+    padding: 3px;
+    grid-template-columns: 1, 1fr;
+    row-gap: 5px;
+    grid-template-areas:
+      "gitHub"
+      "otrosRepos";
+    width: auto;
+    gap: 0;
+  }
 
-    .youtube {
-        width: 700px;
-        margin: 5px;
-        padding: auto;
-    }
+  .repos ul li a {
+    font-size: 2rem;
+  }
 
-    .repos {
-        padding: 3px;
-        grid-template-columns: 1, 1fr;
-        row-gap: 5px;
-        grid-template-areas:
-            "gitHub"
-            "otrosRepos"
-        ;
-        width: auto;
-        gap: 0;
-    }
+  .gitHubRepos {
+    padding: 3px;
+    height: auto;
+    text-align: start;
+  }
 
-    .repos ul li a {
-        font-size: 2rem;
-    }
+  .otrosRepos {
+    padding: 3px;
+    height: auto;
+    text-align: start;
+  }
 
-    .gitHubRepos {
-        padding: 3px;
-        height: auto;
-        text-align: start;
-    }
+  .gridServ {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: (4, 1fr);
+    column-gap: 1rem;
+    grid-template-areas:
+      "honorarios"
+      "servicios"
+      "developer"
+      "abogado";
+  }
 
-    .otrosRepos {
-        padding: 3px;
-        height: auto;
-        text-align: start;
+  .servicios {
+    grid-area: servicios;
+  }
 
-    }
+  .arancelesAb {
+    grid-area: abogado;
+    color: black;
+    padding: 1rem;
+    text-align: start;
+    font-size: x-large;
+  }
 
-    .gridServ {
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (4, 1fr);
-        column-gap: 1rem;
-        grid-template-areas:
-            "honorarios"
-            "servicios"
-            "developer"
-            "abogado"
-        ;
-    }
-
-    .servicios {
-        grid-area: servicios;
-
-    }
-
-    .arancelesAb {
-        grid-area: abogado;
-        color: black;
-        padding: 1rem;
-        text-align: start;
-        font-size: x-large;
-    }
-
-    .arancelesDev {
-        grid-area: developer;
-        color: black;
-        padding: 1rem;
-        text-align: start;
-        font-size: x-large;
-    }
-
+  .arancelesDev {
+    grid-area: developer;
+    color: black;
+    padding: 1rem;
+    text-align: start;
+    font-size: x-large;
+  }
 }
 
+/*        ****************************************************   media queries hasta un ancho de 412px   **********************************************************       */
+
 @media (min-width: 0px) and (max-width: 412px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .navbar-brand a,
-    .colorFondo a {
-        color: white;
-    }
+  .navbar-brand a,
+  .colorFondo a {
+    color: white;
+  }
 
-    .youtube {
-        width: 300px;
-        background-color: black;
-        margin: 5px;
-        padding: auto;
-    }
+  .youtube {
+    width: 300px;
+    background-color: black;
+    margin: 5px;
+    padding: auto;
+  }
 
-    .repos {
-        padding: 2px;
-        grid-template-columns: 1, 1fr;
-        row-gap: 2px;
-        grid-template-areas:
-            "gitHub"
-            "otrosRepos"
-        ;
-        width: auto;
-        gap: 0;
-    }
+  .repos {
+    padding: 2px;
+    grid-template-columns: 1, 1fr;
+    row-gap: 2px;
+    grid-template-areas:
+      "gitHub"
+      "otrosRepos";
+    width: auto;
+    gap: 0;
+  }
 
-    .repos ul li a {
-        font-size: 1.5rem;
-    }
+  .repos ul li a {
+    font-size: 1.5rem;
+  }
 
-    .gitHubRepos {
-        padding: 1px;
-        height: auto;
-        text-align: start;
-    }
+  .gitHubRepos {
+    padding: 1px;
+    height: auto;
+    text-align: start;
+  }
 
-    .otrosRepos {
-        padding: 1px;
-        height: auto;
-        text-align: start;
+  .otrosRepos {
+    padding: 1px;
+    height: auto;
+    text-align: start;
+  }
 
-    }
+  .gridServ {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: (4, 1fr);
+    column-gap: 1rem;
+    grid-template-areas:
+      "honorarios"
+      "servicios"
+      "developer"
+      "abogado";
+  }
 
-    .gridServ {
-        display: grid;
-        grid-template-columns: (1, 1fr);
-        grid-template-rows: (4, 1fr);
-        column-gap: 1rem;
-        grid-template-areas:
-            "honorarios"
-            "servicios"
-            "developer"
-            "abogado"
-        ;
-    }
+  .servicios {
+    grid-area: servicios;
+  }
 
-    .servicios {
-        grid-area: servicios;
+  .arancelesAb {
+    grid-area: abogado;
+    color: white;
+    padding: 2px;
+    text-align: start;
+  }
 
-    }
-
-    .arancelesAb {
-        grid-area: abogado;
-        color: white;
-        padding: 2px;
-        text-align: start;
-    }
-
-    .arancelesDev {
-        grid-area: developer;
-        color: white;
-        padding: 2px;
-        text-align: start;
-    }
-
+  .arancelesDev {
+    grid-area: developer;
+    color: white;
+    padding: 2px;
+    text-align: start;
+  }
 }
