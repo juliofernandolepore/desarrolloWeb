@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+@import "fonts";
+@import "reset";
 
 /*   ************************************************ only TAGS ******************************************************** */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: rgb(55, 133, 99);
@@ -36,16 +31,6 @@ footer {
   width: 100%;
   margin-bottom: 0;
 }
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-
 /*     ****************************************************** solo gradients ******************************************************** */
 
 
@@ -150,10 +135,9 @@ span {
 .news div {
   margin: 40px;
   padding: 40px;
-}
-
-.news div p {
-  padding: 5px 30px;
+  p {
+    padding: 5px 30px;
+  }
 }
 
 .registro {
@@ -167,13 +151,12 @@ span {
 
 .colorFondo {  
   background-color: rgb(15, 97, 98);
-  transition: 2s;
-}
-
-.colorFondo a {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-size: large;
+  transition: 2s; 
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+  }
 }
 
 .colorFondo a:hover {
@@ -257,10 +240,9 @@ span {
   gap: 0.1rem;
   grid-template-columns: 2, 1fr;
   grid-template-areas: "gitHub otrosRepos";
-}
-
-.repos h1 a {
-  color: black;
+        h1 a {
+    color: black;
+  }
 }
 
 .gitHubRepos {
@@ -344,11 +326,10 @@ span {
       "otrosRepos";
     width: auto;
     gap: 0;
-  }
-
-  .repos ul li a {
-    font-size: 2rem;
-  }
+    ul li a {
+      font-size: 2rem;
+    }
+  } 
 
   .gitHubRepos {
     padding: 3px;
@@ -425,10 +406,9 @@ span {
       "otrosRepos";
     width: auto;
     gap: 0;
-  }
-
-  .repos ul li a {
-    font-size: 1.5rem;
+    ul li a {
+      font-size: 1.5rem;
+    }
   }
 
   .gitHubRepos {

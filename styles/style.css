@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
-/*   ************************************************ only TAGS ******************************************************** */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*   ************************************************ only TAGS ******************************************************** */
 body {
   background: rgb(55, 133, 99);
   background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
@@ -16,14 +24,6 @@ footer {
   bottom: 0;
   width: 100%;
   margin-bottom: 0;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 /*     ****************************************************** solo gradients ******************************************************** */
@@ -102,7 +102,6 @@ span {
   margin: 40px;
   padding: 40px;
 }
-
 .news div p {
   padding: 5px 30px;
 }
@@ -120,7 +119,6 @@ span {
   background-color: rgb(15, 97, 98);
   transition: 2s;
 }
-
 .colorFondo a {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -207,7 +205,6 @@ span {
   grid-template-columns: 2, 1fr;
   grid-template-areas: "gitHub otrosRepos";
 }
-
 .repos h1 a {
   color: black;
 }
