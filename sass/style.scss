@@ -1,46 +1,11 @@
 @import "varGlobal";
 @import "fonts";
 @import "reset";
+@import "classTemplate";
+@import "mixins";
+@import "navBar";
+@import "forms";
 @import "footer";
-
-/*   ********* only TAGS ************* */
-
-body {
-  background: rgb(55, 133, 99);
-  background: -moz-linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  background: -webkit-linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  background: linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
-}
-
-/*     **************** solo gradients ********************* */
-
-.gradientDesktop {
-
-  background: rgb(55, 133, 99);
-  background: -moz-linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  background: -webkit-linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  background: linear-gradient(50deg,
-      rgba(55, 133, 99, 0.7203256302521008) 0%,
-      rgba(55, 133, 99, 0.8323704481792717) 27%,
-      rgba(169, 237, 218, 1) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
-}
 
 .gradientMobile800 {
   background: rgb(0, 8, 4);
@@ -121,25 +86,7 @@ span {
   }
 }
 
-.registro {
-  padding: 15rem 4rem;
-}
 
-.colorFondo {
-  background-color: $color;
-  transition: 2s;
-
-  a {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: large;
-  }
-}
-
-.colorFondo a:hover {
-  border-bottom: 0.1rem solid white;
-  color: white;
-}
 
 .efectoFondo2 {
   transition: 1s;
@@ -177,9 +124,7 @@ span {
   width: 2rem;
 }
 
-.gridServ {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+.gridServ {  
   display: grid;
   grid-template-columns: (2, 1fr);
   grid-template-rows: (2, 1fr);

@@ -1,0 +1,18 @@
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin margenes($superior, $derecho, $inferior, $izquierdo) {
+    margin-top: $superior;
+    margin-right: $derecho;
+    margin-bottom: $inferior;
+    margin-left: $izquierdo;
+}
+
+@mixin padding ($superior,$derecho,$inferior,$izquierdo) {
+    padding-top: $superior;
+    padding-right: $derecho;
+    padding-bottom: $inferior;
+    padding-left: $izquierdo;
+}

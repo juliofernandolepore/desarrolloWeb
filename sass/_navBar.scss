@@ -1,0 +1,15 @@
+.colorFondo {
+    background-color: $color;
+    transition: 2s;
+  
+    a {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: large;
+    }
+  }
+  
+  .colorFondo a:hover {
+    border-bottom: 0.1rem solid white;
+    color: white;
+  }

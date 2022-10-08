@@ -13,6 +13,25 @@ a {
   text-decoration: none;
 }
 
+.colorFondo {
+  background-color: rgb(15, 97, 98);
+  transition: 2s;
+}
+.colorFondo a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: large;
+}
+
+.colorFondo a:hover {
+  border-bottom: 0.1rem solid white;
+  color: white;
+}
+
+.registro {
+  padding: 15rem 4rem;
+}
+
 footer {
   bottom: 0;
   width: 100%;
@@ -22,20 +41,6 @@ footer {
 .footerClass {
   background-color: rgb(15, 97, 98);
   height: 15vh;
-}
-
-/*   ********* only TAGS ************* */
-body {
-  background: rgb(55, 133, 99);
-  background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
-}
-
-/*     **************** solo gradients ********************* */
-.gradientDesktop {
-  background: rgb(55, 133, 99);
-  background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
 }
 
 .gradientMobile800 {
@@ -113,25 +118,6 @@ span {
   padding: 5px 30px;
 }
 
-.registro {
-  padding: 15rem 4rem;
-}
-
-.colorFondo {
-  background-color: rgb(15, 97, 98);
-  transition: 2s;
-}
-.colorFondo a {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-size: large;
-}
-
-.colorFondo a:hover {
-  border-bottom: 0.1rem solid white;
-  color: white;
-}
-
 .efectoFondo2 {
   transition: 1s;
 }
@@ -169,8 +155,6 @@ span {
 }
 
 .gridServ {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-rows: 2, 1fr;
