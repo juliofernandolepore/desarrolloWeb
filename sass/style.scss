@@ -1,84 +1,62 @@
+@import "varGlobal";
 @import "fonts";
 @import "reset";
+@import "footer";
 
-/*   ************************************************ only TAGS ******************************************************** */
+/*   ********* only TAGS ************* */
 
 body {
   background: rgb(55, 133, 99);
-  background: -moz-linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
-  background: -webkit-linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
-  background: linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
+  background: -moz-linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
+  background: -webkit-linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
+  background: linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
 }
 
-footer {  
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 0;
-}
-/*     ****************************************************** solo gradients ******************************************************** */
+/*     **************** solo gradients ********************* */
 
-
-.gradientDesktop {   
+.gradientDesktop {
 
   background: rgb(55, 133, 99);
-  background: -moz-linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
-  background: -webkit-linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
-  background: linear-gradient(
-    50deg,
-    rgba(55, 133, 99, 0.7203256302521008) 0%,
-    rgba(55, 133, 99, 0.8323704481792717) 27%,
-    rgba(169, 237, 218, 1) 84%
-  );
+  background: -moz-linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
+  background: -webkit-linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
+  background: linear-gradient(50deg,
+      rgba(55, 133, 99, 0.7203256302521008) 0%,
+      rgba(55, 133, 99, 0.8323704481792717) 27%,
+      rgba(169, 237, 218, 1) 84%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
-} 
+}
 
 .gradientMobile800 {
   background: rgb(0, 8, 4);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(0, 8, 4, 0.9416141456582633) 8%,
-    rgba(163, 193, 173, 1) 91%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 8, 4, 0.9416141456582633) 8%,
-    rgba(163, 193, 173, 1) 91%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(0, 8, 4, 0.9416141456582633) 8%,
-    rgba(163, 193, 173, 1) 91%
-  );
+  background: -moz-linear-gradient(0deg,
+      rgba(0, 8, 4, 0.9416141456582633) 8%,
+      rgba(163, 193, 173, 1) 91%);
+  background: -webkit-linear-gradient(0deg,
+      rgba(0, 8, 4, 0.9416141456582633) 8%,
+      rgba(163, 193, 173, 1) 91%);
+  background: linear-gradient(0deg,
+      rgba(0, 8, 4, 0.9416141456582633) 8%,
+      rgba(163, 193, 173, 1) 91%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
 }
 
-/*  *********************************************************************** only CLASS ************************************************************** */
+/*  *********************** only CLASS *************************** */
 
 .mentors {
   text-align: center;
@@ -128,13 +106,16 @@ span {
   animation-direction: alternate;
 }
 
-.news h1, .mentors, span {
-    font-weight: bolder;
+.news h1,
+.mentors,
+span {
+  font-weight: bolder;
 }
 
 .news div {
   margin: 40px;
   padding: 40px;
+
   p {
     padding: 5px 30px;
   }
@@ -144,14 +125,10 @@ span {
   padding: 15rem 4rem;
 }
 
-.footerClass {
-  background-color: rgb(15, 97, 98);
-  height: auto;
-}
+.colorFondo {
+  background-color: $color;
+  transition: 2s;
 
-.colorFondo {  
-  background-color: rgb(15, 97, 98);
-  transition: 2s; 
   a {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -170,7 +147,7 @@ span {
 
 .efectoFondo2:hover {
   border: 0.1rem solid white;
-  background-color: rgb(15, 97, 98);
+  background-color: $color;
   border-radius: 5%;
 }
 
@@ -240,7 +217,8 @@ span {
   gap: 0.1rem;
   grid-template-columns: 2, 1fr;
   grid-template-areas: "gitHub otrosRepos";
-        h1 a {
+
+  h1 a {
     color: black;
   }
 }
@@ -258,7 +236,7 @@ span {
 }
 
 .colorBotonPred {
-  background-color: rgb(15, 97, 98);
+  background-color: $color;
 }
 
 .colorBotonPred:hover {
@@ -270,7 +248,7 @@ span {
   text-align: center;
 }
 
-/*                 ****************************************       seccion de animaciones        *****************************************************************             */
+/*   *******************     seccion de animaciones        *************       */
 
 @keyframes changeColor {
   from {
@@ -298,10 +276,11 @@ span {
   }
 }
 
-/*  ***************************************************En esta seccion comienzan las media queries  *********************************************  */
+/*  ************En esta seccion comienzan las media queries  *************  */
 /* ****** hasta un ancho maximo de 800px ******* */
 
 @media (max-width: 800px) {
+
   section .gradientMobile800 .navbar-brand a,
   .colorFondo a {
     color: black;
@@ -326,10 +305,11 @@ span {
       "otrosRepos";
     width: auto;
     gap: 0;
+
     ul li a {
       font-size: 2rem;
     }
-  } 
+  }
 
   .gitHubRepos {
     padding: 3px;
@@ -376,7 +356,7 @@ span {
   }
 }
 
-/*        ****************************************************   media queries hasta un ancho de 412px   **********************************************************       */
+/*        ****  media queries hasta un ancho de 412px   ****     */
 
 @media (min-width: 0px) and (max-width: 412px) {
   * {
@@ -406,6 +386,7 @@ span {
       "otrosRepos";
     width: auto;
     gap: 0;
+
     ul li a {
       font-size: 1.5rem;
     }

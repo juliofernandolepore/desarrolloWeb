@@ -13,20 +13,25 @@ a {
   text-decoration: none;
 }
 
-/*   ************************************************ only TAGS ******************************************************** */
-body {
-  background: rgb(55, 133, 99);
-  background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
-}
-
 footer {
   bottom: 0;
   width: 100%;
   margin-bottom: 0;
 }
 
-/*     ****************************************************** solo gradients ******************************************************** */
+.footerClass {
+  background-color: rgb(15, 97, 98);
+  height: 15vh;
+}
+
+/*   ********* only TAGS ************* */
+body {
+  background: rgb(55, 133, 99);
+  background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#378563", endColorstr="#a9edda", GradientType=1);
+}
+
+/*     **************** solo gradients ********************* */
 .gradientDesktop {
   background: rgb(55, 133, 99);
   background: linear-gradient(50deg, rgba(55, 133, 99, 0.7203256303) 0%, rgba(55, 133, 99, 0.8323704482) 27%, rgb(169, 237, 218) 84%);
@@ -39,7 +44,7 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
 }
 
-/*  *********************************************************************** only CLASS ************************************************************** */
+/*  *********************** only CLASS *************************** */
 .mentors {
   text-align: center;
   margin: auto;
@@ -94,7 +99,9 @@ span {
           animation-direction: alternate;
 }
 
-.news h1, .mentors, span {
+.news h1,
+.mentors,
+span {
   font-weight: bolder;
 }
 
@@ -108,11 +115,6 @@ span {
 
 .registro {
   padding: 15rem 4rem;
-}
-
-.footerClass {
-  background-color: rgb(15, 97, 98);
-  height: auto;
 }
 
 .colorFondo {
@@ -234,7 +236,7 @@ span {
   text-align: center;
 }
 
-/*                 ****************************************       seccion de animaciones        *****************************************************************             */
+/*   *******************     seccion de animaciones        *************       */
 @-webkit-keyframes changeColor {
   from {
     color: rgb(243, 244, 248);
@@ -279,7 +281,7 @@ span {
     width: 100%;
   }
 }
-/*  ***************************************************En esta seccion comienzan las media queries  *********************************************  */
+/*  ************En esta seccion comienzan las media queries  *************  */
 /* ****** hasta un ancho maximo de 800px ******* */
 @media (max-width: 800px) {
   section .gradientMobile800 .navbar-brand a,
@@ -341,7 +343,7 @@ span {
     font-size: x-large;
   }
 }
-/*        ****************************************************   media queries hasta un ancho de 412px   **********************************************************       */
+/*        ****  media queries hasta un ancho de 412px   ****     */
 @media (min-width: 0px) and (max-width: 412px) {
   * {
     margin: 0;
