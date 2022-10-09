@@ -1,1 +1,14 @@
 //clases principales para extender o heredar a otras.
+.gradientMobile800 {
+    background: rgb(0, 8, 4);
+    background: -moz-linear-gradient(0deg,
+            rgba(0, 8, 4, 0.9416141456582633) 8%,
+            rgba(163, 193, 173, 1) 91%);
+    background: -webkit-linear-gradient(0deg,
+            rgba(0, 8, 4, 0.9416141456582633) 8%,
+            rgba(163, 193, 173, 1) 91%);
+    background: linear-gradient(0deg,
+            rgba(0, 8, 4, 0.9416141456582633) 8%,
+            rgba(163, 193, 173, 1) 91%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000804", endColorstr="#a3c1ad", GradientType=1);
+}

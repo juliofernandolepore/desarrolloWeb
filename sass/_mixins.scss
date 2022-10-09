@@ -4,15 +4,15 @@
 }
 
 @mixin margenes($superior, $derecho, $inferior, $izquierdo) {
-    margin-top: $superior;
-    margin-right: $derecho;
-    margin-bottom: $inferior;
-    margin-left: $izquierdo;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
 }
 
 @mixin padding ($superior,$derecho,$inferior,$izquierdo) {
-    padding-top: $superior;
-    padding-right: $derecho;
-    padding-bottom: $inferior;
-    padding-left: $izquierdo;
+    padding-top: 2rem;
+    padding-right: auto;
+    padding-bottom: 2rem;
+    padding-left: auto;
 }

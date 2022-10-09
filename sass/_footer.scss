@@ -7,4 +7,8 @@ footer {
   .footerClass {
     background-color: $color;
     height: 15vh;
+    div {
+      height: auto;
+    }
   }
+  
