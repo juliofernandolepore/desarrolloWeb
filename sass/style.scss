@@ -6,30 +6,10 @@
 @import "classTemplate";
 @import "mixins";
 @import "navBar";
+@import "grids";
 @import "forms";
+@import "videos";
 @import "footer";
-
-.mentors {
-  text-align: center;
-  margin: auto;
-}
-
-.video section {
-  padding: auto;
-}
-
-.youtube {
-  margin: 5px;
-  max-height: 200px;
-  max-width: 350px;
-  border: 3px solid black;
-  transition: 1.5s;
-
-  &:hover {
-    border-radius: 12%;
-    border: 3px white solid;
-  }
-}
 
 .news li p {
   font-weight: bold;
@@ -46,9 +26,8 @@
   }
 }
 
-.news h1,
-.mentors,
-span {
+.citas cite span {
+  font-weight: bolder;
   text-align: center;
   text-transform: capitalize;
   animation-duration: 5s;
@@ -57,18 +36,12 @@ span {
   animation-direction: alternate;
 }
 
-.news h1,
-.mentors,
-span {
-  font-weight: bolder;
-}
-
 .news div {
-  margin: 40px;
-  padding: 40px;
+  margin: 10px;
+  padding: 10px;
 
   p {
-    padding: 5px 30px;
+    padding: 5px 20px;
   }
 }
 
@@ -98,66 +71,9 @@ span {
   transition: 1s, border 0.5s;
 
   &:hover {
-    border-bottom: 3px solid white;
-    padding: auto;
+    border-bottom: 3px solid white;    
     width: 2rem;
   }
-}
-
-.gridServ {
-  display: grid;
-  grid-template-columns: (2, 1fr);
-  grid-template-rows: (2, 1fr);
-  column-gap: 1rem;
-  grid-template-areas:
-    "honorarios honorarios"
-    "servicios servicios"
-    "developer abogado";
-}
-
-.servicios {
-  grid-area: servicios;
-}
-
-.arancelesAb {
-  grid-area: abogado;
-  font-size: medium;
-  color: white;
-  padding: 1rem;
-  text-align: start;
-}
-
-.arancelesDev {
-  grid-area: developer;
-  font-size: medium;
-  color: white;
-  padding: 1rem;
-  text-align: start;
-}
-
-.repos {
-  text-align: justify;
-  padding: auto;
-  display: grid;
-  gap: 0.1rem;
-  grid-template-columns: 2, 1fr;
-  grid-template-areas: "gitHub otrosRepos";
-
-  h1 a {
-    color: black;
-  }
-}
-
-.gitHubRepos {
-  grid-area: gitHub;
-  padding: 2rem;
-  margin: 3rem;
-}
-
-.otrosRepos {
-  grid-area: otrosRepos;
-  padding: 2rem;
-  margin: 3rem;
 }
 
 .colorBotonPred {

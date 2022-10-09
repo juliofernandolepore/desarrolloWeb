@@ -16,7 +16,7 @@
     }
   
     .repos {
-      padding: 3px;
+      padding: auto;
       grid-template-columns: 1, 1fr;
       row-gap: 5px;
       grid-template-areas:
@@ -31,7 +31,7 @@
     }
   
     .gitHubRepos {
-      padding: 3px;
+      padding: 20px;
       height: auto;
       text-align: start;
     }
@@ -78,12 +78,7 @@
   /*        ****  media queries hasta un ancho de 412px   ****     */
   
   @media (min-width: 0px) and (max-width: 412px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  
+     
     .navbar-brand a,
     .colorFondo a {
       color: white;
@@ -112,7 +107,7 @@
     }
   
     .gitHubRepos {
-      padding: 1px;
+      padding: 20px;
       height: auto;
       text-align: start;
     }
