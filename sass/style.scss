@@ -17,9 +17,9 @@
   animation-name: slidein;
 
   &:hover {
-    color: red;
+    color: $colorRojo;
     padding-left: 50%;
-    border-left: 5px solid red;
+    border-left: 5px solid $colorRojo;
     transition: 1.5s;
     text-transform: uppercase;
     font-weight: 1200;
@@ -37,11 +37,11 @@
 }
 
 .news div {
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 
   p {
-    padding: 5px 20px;
+    padding: 5px;
   }
 }
 
@@ -49,7 +49,7 @@
   transition: 1s;
 
   &:hover {
-    border: 0.1rem solid white;
+    border: 0.1rem solid $blancoHovers;
     background-color: $color;
     border-radius: 5%;
   }
@@ -57,10 +57,10 @@
 
 .efectoFondo3 a {
   transition: 1s;
-  color: white;
+  color: $blancoHovers;
 
   &:hover {
-    color: black;
+    color: $marronOscuro;
   }
 }
 
@@ -71,7 +71,7 @@
   transition: 1s, border 0.5s;
 
   &:hover {
-    border-bottom: 3px solid white;    
+    border-bottom: 3px solid $blancoHovers;
     width: 2rem;
   }
 }
@@ -80,7 +80,7 @@
   background-color: $color;
 
   &:hover {
-    background-color: rgb(12, 62, 60);
+    background-color: $hoverParrafos;
     transition: 1s;
   }
 }
