@@ -3,18 +3,18 @@
     height: $alto;
 }
 
-@mixin margenes($superior, $derecho, $inferior, $izquierdo) {
-    margin-top: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
+@mixin margenes($superior: 2px, $derecho: 2px, $inferior: 1px, $izquierdo: 2px) {
+    margin-top: $superior;
+    margin-right: $derecho;
+    margin-bottom: $inferior;
+    margin-left: $izquierdo;
 }
 
-@mixin padding ($superior, $derecho, $inferior, $izquierdo) {
-    padding-top: 2rem;
-    padding-right: auto;
-    padding-bottom: 2rem;
-    padding-left: auto;
+@mixin padding ($superior: 3px, $derecho: 2px, $inferior: 1px, $izquierdo: 2px) {
+    padding-top: $superior;
+    padding-right: $derecho;
+    padding-bottom: $inferior;
+    padding-left: $izquierdo;
 }
 
 @mixin contenedorParrafo ($alineaciontexto, $colorTexto, $borde, $tamanioTexto, $paddingx4, $marginx4) {

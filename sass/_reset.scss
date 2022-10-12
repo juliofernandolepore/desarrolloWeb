@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  @include margenes(0, 0, 0, 0, );
+  @include padding(0, 0, 0, 0);
   box-sizing: border-box;
 }
 

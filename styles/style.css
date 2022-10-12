@@ -245,8 +245,8 @@ a {
   font-size: large;
 }
 .colorFondo a:hover {
-  border-bottom: 0.1rem solid white;
-  color: white;
+  border-bottom: 0.1rem solid rgb(248, 242, 242);
+  color: rgb(248, 242, 242);
 }
 
 .gridServ {
