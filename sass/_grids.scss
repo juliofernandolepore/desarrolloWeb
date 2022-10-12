@@ -1,8 +1,9 @@
 .gridServ {
-  display: grid;
+  @include grid;
+  //display: grid;
   grid-template-columns: (2, 1fr);
   grid-template-rows: (2, 1fr);
-  column-gap: 1rem;
+  //column-gap: 1rem;
   grid-template-areas:
     "honorarios honorarios"
     "servicios servicios"
@@ -35,6 +36,7 @@
   color: $marronOscuro;
   padding: 1rem;
   text-align: start;
+
 }
 
 .repos {

@@ -10,9 +10,23 @@
     margin-left: auto;
 }
 
-@mixin padding ($superior,$derecho,$inferior,$izquierdo) {
+@mixin padding ($superior, $derecho, $inferior, $izquierdo) {
     padding-top: 2rem;
     padding-right: auto;
     padding-bottom: 2rem;
     padding-left: auto;
+}
+
+@mixin contenedorParrafo ($alineaciontexto, $colorTexto, $borde, $tamanioTexto, $paddingx4, $marginx4) {
+    text-align: $alineaciontexto;
+    color: $colorTexto;
+    border: $borde;
+    font-size: $tamanioTexto;
+    padding: $paddingx4;
+    margin: $marginx4;
+}
+
+@mixin grid ($gridEnable: grid, $gapCol: 1rem, ) {
+    grid: $gridEnable;
+    column-gap: $gapCol;
 }

@@ -250,11 +250,11 @@ a {
 }
 
 .gridServ {
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-rows: 2, 1fr;
+  grid: grid;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 2, 1fr;
   grid-template-areas: "honorarios honorarios" "servicios servicios" "developer abogado";
 }
 .gridServ h1,
