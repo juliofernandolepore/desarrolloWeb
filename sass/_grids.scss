@@ -1,55 +1,65 @@
 .gridServ {
-    display: grid;
-    grid-template-columns: (2, 1fr);
-    grid-template-rows: (2, 1fr);
-    column-gap: 1rem;
-    grid-template-areas:
-      "honorarios honorarios"
-      "servicios servicios"
-      "developer abogado";
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  grid-template-rows: (2, 1fr);
+  column-gap: 1rem;
+  grid-template-areas:
+    "honorarios honorarios"
+    "servicios servicios"
+    "developer abogado";
+
+  h1,
+  h2 a,
+  h3 span,
+  h4 {
+    color: $marronOscuro;
   }
-  
-  .servicios {
-    grid-area: servicios;
+
+}
+
+.servicios {
+  grid-area: servicios;
+}
+
+.arancelesAb {
+  grid-area: abogado;
+  font-size: medium;
+  color: $marronOscuro;
+  padding: 1rem;
+  text-align: start;
+}
+
+.arancelesDev {
+  grid-area: developer;
+  font-size: medium;
+  color: $marronOscuro;
+  padding: 1rem;
+  text-align: start;
+}
+
+.repos {
+  margin: 40px auto;
+  text-align: justify;
+  padding: 10px;
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: "gitHub otrosRepos";
+
+  h1 a {
+    color: black;
+    font-size: 2rem;
   }
-  
-  .arancelesAb {
-    grid-area: abogado;
-    font-size: medium;
-    color: white;
-    padding: 1rem;
-    text-align: start;
-  }
-  
-  .arancelesDev {
-    grid-area: developer;
-    font-size: medium;
-    color: white;
-    padding: 1rem;
-    text-align: start;
-  }
-  
-  .repos {
-    text-align: justify;
-    padding: auto;
-    display: grid;
-    gap: 0.1rem;
-    grid-template-columns: 2, 1fr;
-    grid-template-areas: "gitHub otrosRepos";
-  
-    h1 a {
-      color: black;
-    }
-  }
-  
+
   .gitHubRepos {
     grid-area: gitHub;
-    padding: auto;
-    margin: auto;
+    padding: 15px;
+    margin: 10px;
   }
-  
+
   .otrosRepos {
     grid-area: otrosRepos;
     padding: 2rem;
     margin: 3rem;
   }
+}

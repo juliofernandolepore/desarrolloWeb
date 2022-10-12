@@ -1,9 +1,9 @@
 @import "varGlobal";
 @import "fonts";
 @import "reset";
+@import "classTemplate";
 @import "animaciones";
 @import "mediaQueries";
-@import "classTemplate";
 @import "mixins";
 @import "navBar";
 @import "grids";
@@ -57,10 +57,10 @@
 
 .efectoFondo3 a {
   transition: 1s;
-  color: $blancoHovers;
+  color: $azulOscuro;
 
   &:hover {
-    color: $marronOscuro;
+    color: $blancoHovers;
   }
 }
 
