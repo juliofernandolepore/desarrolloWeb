@@ -8,6 +8,7 @@
 }
 
 .youtube {
+  @include hover-color($blancoHovers);
   margin: 5px;
   max-height: 200px;
   max-width: 350px;
@@ -16,6 +17,6 @@
 
   &:hover {
     border-radius: 12%;
-    border: 3px $blancoHovers solid;
+    border: 3px solid;
   }
 }

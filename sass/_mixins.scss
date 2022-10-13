@@ -30,3 +30,9 @@
     grid: $gridEnable;
     column-gap: $gapCol;
 }
+
+@mixin hover-color($color) {
+    &:hover {
+        color: $color;
+    }
+}
