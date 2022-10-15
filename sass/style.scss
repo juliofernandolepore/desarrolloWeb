@@ -11,6 +11,11 @@
 @import "videos";
 @import "footer";
 
+.tituloPrincipal {
+  @include margin(auto);
+  @include padding(auto);
+}
+
 .news li p {
   font-weight: bold;
   animation-duration: 4s;
@@ -26,7 +31,7 @@
   }
 }
 
-.citas cite span {
+.fade1 {
   font-weight: bolder;
   text-align: center;
   text-transform: capitalize;

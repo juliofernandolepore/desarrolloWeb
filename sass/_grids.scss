@@ -9,15 +9,6 @@
     "servicios servicios"
     "developer abogado";
 
-  h1,
-  h2 a,
-  h3 span,
-  h4 {
-    color: $marronOscuro;
-  }
-
-}
-
 .servicios {
   grid-area: servicios;
 }
@@ -53,7 +44,7 @@
     font-size: 2rem;
   }
 
-  .gitHubRepos {
+  .gitHubRepos {    
     grid-area: gitHub;
     padding: 15px;
     margin: 10px;
