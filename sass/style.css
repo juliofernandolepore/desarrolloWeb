@@ -1,0 +1,237 @@
+/* *********************** FUENTES ******************** */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+/* *********************  VARIABLES ******************** */
+/*  ********************* RESET ********************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: medium;
+}
+
+/*  ******* NAVBAR ******** */
+.colorFondo {
+  background-color: rgb(15, 97, 98);
+  transition: 2s;
+}
+.colorFondo a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: large;
+}
+.colorFondo a:hover {
+  border-bottom: 0.1rem solid rgb(248, 242, 242);
+  color: rgb(248, 242, 242);
+}
+
+/* ************** ANIMACIONES ******************** */
+@-webkit-keyframes changeColor {
+  from {
+    color: rgb(243, 244, 248);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+  to {
+    color: rgb(26, 35, 35);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+@keyframes changeColor {
+  from {
+    color: rgb(243, 244, 248);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+  to {
+    color: rgb(26, 35, 35);
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* ******************* FOOTER **************** */
+footer {
+  width: 100%;
+}
+
+.footerClass {
+  background-color: rgb(15, 97, 98);
+  height: 15vh;
+}
+.footerClass div {
+  height: auto;
+}
+
+/* ********************** VIDEOS ****************** */
+.mentors {
+  text-align: center;
+  margin: auto;
+}
+
+.video section {
+  padding: auto;
+}
+
+.youtube {
+  margin: 5px;
+  max-height: 200px;
+  max-width: 350px;
+  border: 3px solid black;
+  transition: 1.5s;
+}
+.youtube:hover {
+  color: rgb(248, 242, 242);
+}
+.youtube:hover {
+  border-radius: 12%;
+  border: 3px solid;
+}
+
+.registro {
+  padding: 10rem 4rem;
+}
+
+/* ***************** clases inicio ************************** */
+.news li p {
+  font-weight: bold;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+.news li p:hover {
+  color: rgb(218, 22, 22);
+  padding-left: 50%;
+  border-left: 5px solid rgb(218, 22, 22);
+  transition: 1.5s;
+  text-transform: uppercase;
+  font-weight: 1200;
+}
+
+.fade1 {
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: changeColor;
+          animation-name: changeColor;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.news div {
+  margin: 5px;
+  padding: 5px;
+}
+.news div p {
+  padding: 5px;
+}
+
+.efectoFondo2 {
+  transition: 1s;
+}
+.efectoFondo2:hover {
+  border: solid rgb(248, 242, 242);
+  background-color: rgb(15, 97, 98);
+}
+
+.efectoFondo3 a {
+  transition: 1s;
+  color: rgb(32, 17, 75);
+}
+.efectoFondo3 a:hover {
+  color: rgb(248, 242, 242);
+}
+
+.icon {
+  padding: 5px;
+  margin: 5px;
+  width: 3rem;
+  transition: 1s, border 0.5s;
+}
+.icon:hover {
+  border-bottom: 3px solid rgb(248, 242, 242);
+  width: 2rem;
+}
+
+.colorBotonPred {
+  background-color: rgb(15, 97, 98);
+}
+.colorBotonPred:hover {
+  background-color: rgb(12, 62, 60);
+  transition: 1s;
+}
+
+.honorarios {
+  text-align: center;
+}
+
+/* ****************************** GRIDS ************************* */
+.parrafo, .arancelesDev, .arancelesAb {
+  font-size: medium;
+  color: rgb(50, 31, 31);
+  margin: 15px, 0;
+}
+
+.arancelesAb {
+  grid-area: abogado;
+}
+
+.arancelesDev {
+  grid-area: developer;
+}
+
+.repos {
+  text-align: center;
+  padding: auto;
+}
+.repos h1 a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.gitHubRepos {
+  grid-area: gitHub;
+  padding: 3px 0;
+  margin: 3px 0;
+}
+
+.otrosRepos {
+  grid-area: otrosRepos;
+  padding: 3px 0;
+  margin: 3px 0;
+}/*# sourceMappingURL=style.css.map */

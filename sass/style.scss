@@ -1,21 +1,129 @@
-@import "varGlobal";
-@import "fonts";
-@import "reset";
-@import "classTemplate";
-@import "animaciones";
-@import "mediaQueries";
-@import "mixins";
-@import "navBar";
-@import "grids";
-@import "forms";
-@import "videos";
-@import "footer";
+/* *********************** FUENTES ******************** */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
 
-.tituloPrincipal {
-  @include margin(auto);
-  @include padding(auto);
+@import "mixins";
+
+
+/* *********************  VARIABLES ******************** */
+$color: rgb(15, 97, 98);
+$colorRojo: rgb(218, 22, 22);
+$colorBlancoDebil: rgb(243, 244, 248);
+$verdeOscuro : rgb(26, 35, 35);
+$blancoHovers: rgb(248, 242, 242);
+$hoverParrafos: rgb(12, 62, 60);
+$marronOscuro: rgb(50, 31, 31);
+$turquesa: rgb(95, 193, 153);
+$azulOscuro: rgb(32, 17, 75);
+
+
+/*  ********************* RESET ********************** */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2{
+  font-size: medium;
+}
+
+/*  ******* NAVBAR ******** */
+.colorFondo {
+  background-color: $color;
+  transition: 2s;
+
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+
+    &:hover {
+      border-bottom: 0.1rem solid $blancoHovers;
+      color: $blancoHovers;
+    }
+  }
+}
+
+/* ************** ANIMACIONES ******************** */
+
+@keyframes changeColor {
+  from {
+    color: $colorBlancoDebil;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+
+  to {
+    color: $verdeOscuro;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+/* ******************* FOOTER **************** */
+footer {
+  width: 100%;
+}
+
+.footerClass {  
+  background-color: $color;
+  height: 15vh;
+
+  div {
+    height: auto;
+  }
+}
+
+/* ********************** VIDEOS ****************** */
+.mentors {
+  text-align: center;
+  margin: auto;
+}
+
+.video section {
+  padding: auto;
+}
+
+.youtube {
+  @include hover-color($blancoHovers);
+  margin: 5px;
+  max-height: 200px;
+  max-width: 350px;
+  border: 3px solid black;
+  transition: 1.5s;
+
+  &:hover {
+    border-radius: 12%;
+    border: 3px solid;
+  }
+}
+
+.registro {
+  padding: 10rem 4rem;
+}
+
+/* ***************** clases inicio ************************** */
 .news li p {
   font-weight: bold;
   animation-duration: 4s;
@@ -54,9 +162,8 @@
   transition: 1s;
 
   &:hover {
-    border: 0.1rem solid $blancoHovers;
-    background-color: $color;
-    border-radius: 5%;
+    border: solid $blancoHovers;
+    background-color: $color;    
   }
 }
 
@@ -93,3 +200,45 @@
 .honorarios {
   text-align: center;
 }
+
+/* ****************************** GRIDS ************************* */@at-root
+
+ 
+ .parrafo {
+   font-size: medium;
+   color: $marronOscuro;
+   margin: 15px, 0;
+ }
+ 
+ .arancelesAb {
+   grid-area: abogado;
+   @extend .parrafo
+ }
+ 
+ .arancelesDev {
+   grid-area: developer;
+   @extend .parrafo  
+ 
+ }
+ 
+ .repos {   
+   text-align: center;
+   padding: auto;
+   
+ 
+   h1 a {
+     color: black;
+     font-size: 1.5rem;
+   }
+ }
+   .gitHubRepos {    
+     grid-area: gitHub;
+     padding: 3px 0;
+     margin: 3px 0;
+   }
+ 
+   .otrosRepos {
+     grid-area: otrosRepos;
+     padding: 3px 0;
+     margin: 3px 0;
+   }
