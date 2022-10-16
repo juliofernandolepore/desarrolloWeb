@@ -26,7 +26,7 @@
     margin: $marginx4;
 }
 
-@mixin grid ($gridEnable: grid, $gapCol: 1rem, ) {
+@mixin grid ($gridEnable, $gapCol) {
     grid: $gridEnable;
     column-gap: $gapCol;
 }
