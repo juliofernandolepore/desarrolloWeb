@@ -41,8 +41,86 @@ h2 {
 
   main {
     background-color: $colorBlancoDebil;
-    padding: 100px;
+    padding: 2rem;
   }
+}
+
+/* ***************** clases inicio ************************** */
+.news li p {
+  font-weight: bold;
+  animation-duration: 4s;
+  animation-name: slidein;
+
+  &:hover {
+    color: $colorRojo;
+    padding-left: 50%;
+    border-left: 5px solid $colorRojo;
+    transition: 1.5s;
+    text-transform: uppercase;
+    font-weight: 1200;
+  }
+}
+
+.fade1 {
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  animation-duration: 5s;
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.news div {
+  margin: 5px;
+  padding: 5px;
+
+  p {
+    padding: 5px;
+  }
+}
+
+.efectoFondo2 {
+  transition: 1s;
+
+  &:hover {
+    border: solid $blancoHovers;
+    background-color: $color;
+  }
+}
+
+.efectoFondo3 a {
+  transition: 1s;
+  color: $azulOscuro;
+
+  &:hover {
+    color: $blancoHovers;
+  }
+}
+
+.icon {
+  padding: 5px;
+  margin: 5px;
+  width: 3rem;
+  transition: 1s, border 0.5s;
+
+  &:hover {
+    border-bottom: 3px solid $blancoHovers;
+    width: 2rem;
+  }
+}
+
+.colorBotonPred {
+  background-color: $color;
+
+  &:hover {
+    background-color: $hoverParrafos;
+    transition: 1s;
+  }
+}
+
+.honorarios {
+  text-align: center;
 }
 
 /*  ******* NAVBAR ******** */
@@ -127,88 +205,6 @@ footer {
     border-radius: 12%;
     border: 3px solid;
   }
-}
-
-.registro {
-  padding: 10rem 4rem;
-}
-
-/* ***************** clases inicio ************************** */
-.news li p {
-  font-weight: bold;
-  animation-duration: 4s;
-  animation-name: slidein;
-
-  &:hover {
-    color: $colorRojo;
-    padding-left: 50%;
-    border-left: 5px solid $colorRojo;
-    transition: 1.5s;
-    text-transform: uppercase;
-    font-weight: 1200;
-  }
-}
-
-.fade1 {
-  font-weight: bolder;
-  text-align: center;
-  text-transform: capitalize;
-  animation-duration: 5s;
-  animation-name: changeColor;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.news div {
-  margin: 5px;
-  padding: 5px;
-
-  p {
-    padding: 5px;
-  }
-}
-
-.efectoFondo2 {
-  transition: 1s;
-
-  &:hover {
-    border: solid $blancoHovers;
-    background-color: $color;
-  }
-}
-
-.efectoFondo3 a {
-  transition: 1s;
-  color: $azulOscuro;
-
-  &:hover {
-    color: $blancoHovers;
-  }
-}
-
-.icon {
-  padding: 5px;
-  margin: 5px;
-  width: 3rem;
-  transition: 1s, border 0.5s;
-
-  &:hover {
-    border-bottom: 3px solid $blancoHovers;
-    width: 2rem;
-  }
-}
-
-.colorBotonPred {
-  background-color: $color;
-
-  &:hover {
-    background-color: $hoverParrafos;
-    transition: 1s;
-  }
-}
-
-.honorarios {
-  text-align: center;
 }
 
 /* ****************************** GRIDS ************************* */
