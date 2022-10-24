@@ -1,6 +1,5 @@
 /* *********************** FUENTES ******************** */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
-
 @import "mixins";
 
 
@@ -18,7 +17,7 @@ $azulOscuro: rgb(32, 17, 75);
 
 /*  ********************* RESET ********************** */
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -31,8 +30,19 @@ a {
   text-decoration: none;
 }
 
-h2{
+h2 {
   font-size: medium;
+}
+
+/*   ********************** CLASES BOOTSTRAP ******************** */
+.container-fluid {
+  margin: 0;
+  padding: 0;
+
+  main {
+    background-color: $colorBlancoDebil;
+    padding: 100px;
+  }
 }
 
 /*  ******* NAVBAR ******** */
@@ -86,7 +96,7 @@ footer {
   width: 100%;
 }
 
-.footerClass {  
+.footerClass {
   background-color: $color;
   height: 15vh;
 
@@ -163,7 +173,7 @@ footer {
 
   &:hover {
     border: solid $blancoHovers;
-    background-color: $color;    
+    background-color: $color;
   }
 }
 
@@ -201,44 +211,42 @@ footer {
   text-align: center;
 }
 
-/* ****************************** GRIDS ************************* */@at-root
+/* ****************************** GRIDS ************************* */
+@at-root .parrafo {
+  font-size: medium;
+  color: $marronOscuro;
+  margin: 15px, 0;
+}
 
- 
- .parrafo {
-   font-size: medium;
-   color: $marronOscuro;
-   margin: 15px, 0;
- }
- 
- .arancelesAb {
-   grid-area: abogado;
-   @extend .parrafo
- }
- 
- .arancelesDev {
-   grid-area: developer;
-   @extend .parrafo  
- 
- }
- 
- .repos {   
-   text-align: center;
-   padding: auto;
-   
- 
-   h1 a {
-     color: black;
-     font-size: 1.5rem;
-   }
- }
-   .gitHubRepos {    
-     grid-area: gitHub;
-     padding: 3px 0;
-     margin: 3px 0;
-   }
- 
-   .otrosRepos {
-     grid-area: otrosRepos;
-     padding: 3px 0;
-     margin: 3px 0;
-   }
+.arancelesAb {
+  grid-area: abogado;
+  @extend .parrafo
+}
+
+.arancelesDev {
+  grid-area: developer;
+  @extend .parrafo
+}
+
+.repos {
+  text-align: center;
+  padding: auto;
+
+
+  h1 a {
+    color: black;
+    font-size: 1.5rem;
+  }
+}
+
+.gitHubRepos {
+  grid-area: gitHub;
+  padding: 3px 0;
+  margin: 3px 0;
+}
+
+.otrosRepos {
+  grid-area: otrosRepos;
+  padding: 3px 0;
+  margin: 3px 0;
+}
