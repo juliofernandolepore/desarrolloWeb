@@ -101,6 +101,17 @@ h2 {
     border: solid $blancoHovers;
     background-color: $color;
   }
+
+  li {
+    a {
+      color: #dc3545;
+    }
+
+    &:hover {
+      color: $blancoHovers;
+      transition: 1s;
+    }
+  }
 }
 
 .efectoFondo3 a {

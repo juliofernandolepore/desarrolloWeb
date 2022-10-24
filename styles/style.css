@@ -86,6 +86,13 @@ h2 {
   border: solid rgb(248, 242, 242);
   background-color: rgb(15, 97, 98);
 }
+.efectoFondo2 li a {
+  color: #dc3545;
+}
+.efectoFondo2 li:hover {
+  color: rgb(248, 242, 242);
+  transition: 1s;
+}
 
 .efectoFondo3 a {
   transition: 1s;
