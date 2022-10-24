@@ -6,6 +6,7 @@
 /* *********************  VARIABLES ******************** */
 $color: rgb(15, 97, 98);
 $colorRojo: rgb(218, 22, 22);
+$rojoDebil: #dc3545;
 $colorBlancoDebil: rgb(243, 244, 248);
 $verdeOscuro : rgb(26, 35, 35);
 $blancoHovers: rgb(248, 242, 242);
@@ -44,6 +45,19 @@ h2 {
     padding: 2rem;
   }
 }
+
+.btn-primary {
+  background-color: $verdeOscuro;
+
+  &:hover {
+    /* modificacion de backgroud-color en hover de bootstrap, no me permite
+    aplicar el color almacenado en una variable */
+    --bs-btn-hover-bg: #dc3545;
+    transition: 1s;
+  }
+}
+
+
 
 /* ***************** clases inicio ************************** */
 .news li p {
@@ -107,15 +121,6 @@ h2 {
   &:hover {
     border-bottom: 3px solid $blancoHovers;
     width: 2rem;
-  }
-}
-
-.colorBotonPred {
-  background-color: $color;
-
-  &:hover {
-    background-color: $hoverParrafos;
-    transition: 1s;
   }
 }
 

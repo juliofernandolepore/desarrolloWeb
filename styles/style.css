@@ -30,6 +30,16 @@ h2 {
   padding: 2rem;
 }
 
+.btn-primary {
+  background-color: rgb(26, 35, 35);
+}
+.btn-primary:hover {
+  /* modificacion de backgroud-color en hover de bootstrap, no me permite
+  aplicar el color almacenado en una variable */
+  --bs-btn-hover-bg: #dc3545;
+  transition: 1s;
+}
+
 /* ***************** clases inicio ************************** */
 .news li p {
   font-weight: bold;
@@ -94,14 +104,6 @@ h2 {
 .icon:hover {
   border-bottom: 3px solid rgb(248, 242, 242);
   width: 2rem;
-}
-
-.colorBotonPred {
-  background-color: rgb(15, 97, 98);
-}
-.colorBotonPred:hover {
-  background-color: rgb(12, 62, 60);
-  transition: 1s;
 }
 
 .honorarios {
