@@ -66,35 +66,38 @@ h2 {
   }
 }
 /*   ********************** CLASES BOOTSTRAP ******************** */
-.navbar {
-  background-color: #0f6162;
-  transition: 3s;
-  min-height: 20vh;
-  font-size: 1.8rem;
-  margin: auto, 3rem;
-}
-
-a {
-  padding: auto;
-  margin: auto;
-}
-a:hover {
-  border-radius: 0.5rem;
-  border-bottom: 0.1rem solid black;
-  background-color: #178486;
-  font-size: 2rem;
-  padding: 0, 1rem;
-}
-
+/* **************** BODY y MAIN *****(CLASE DE BOOTSTRAP) */
 .container-fluid {
   margin: 0;
   padding: 0;
 }
 .container-fluid main {
-  background-color: #f3f4f8;
+  background-color: rgb(170, 159, 88);
   padding: 2rem;
 }
 
+/*  **************************** NAV DE BOOTSTRAP  ********************/
+.navbar {
+  background-color: #0f6162;
+  transition: 3s;
+  min-height: 17vh;
+  font-size: 1.6rem;
+  padding: 3rem;
+}
+.navbar a {
+  color: #f3f4f8;
+  padding: auto;
+  margin: auto, 3rem;
+}
+.navbar a:hover {
+  border-radius: 0.5rem;
+  border-bottom: 0.1rem solid black;
+  background-color: #178486;
+  font-size: 1.7rem;
+  padding: 0, 1rem;
+}
+
+/*   *************** BOTONES (CLASE DE BOOTSTRAP) ********  */
 .btn-primary {
   background-color: #1a2323;
 }
@@ -105,11 +108,8 @@ a:hover {
   transition: 1s;
 }
 
-.bg-gradient {
-  background-color: #dee2e6;
-}
-
-/* ***************** clases inicio ************************** */
+/* ***************** clases CSS ************************** */
+/*    ************** HOME (INICIO) *************   */
 .news li p {
   font-weight: bold;
   -webkit-animation-duration: 4s;
@@ -170,16 +170,6 @@ a:hover {
   color: #f8f2f2;
 }
 
-.icon {
-  margin: 2rem;
-  width: 4rem;
-  transition: 1s, border 0.5s;
-}
-.icon:hover {
-  border-bottom: 3px solid #f8f2f2;
-  width: 3.5rem;
-}
-
 .honorarios {
   text-align: center;
 }
@@ -213,11 +203,20 @@ a:hover {
 footer {
   width: 100%;
 }
-
-.footerClass {
+footer .footerClass {
   background-color: #0f6162;
-  height: 30vh;
+  height: 8rem;
 }
-.footerClass div {
-  padding: 1rem;
+footer .footerClass img {
+  margin: 2rem;
+  width: 4rem;
+  transition: 1s, border 0.5s;
+}
+footer .footerClass img:hover {
+  border-bottom: 3px solid #f8f2f2;
+  width: 3.5rem;
+}
+
+.citas p {
+  color: #321f1f;
 }/*# sourceMappingURL=style.css.map */

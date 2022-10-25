@@ -1,6 +1,5 @@
 @import 'mixins', 'reset', 'fonts';
 
-
 /* *********************  VARIABLES ******************** */
 $gray-600: #6c757d;
 $grisOscuro: #4a4848;
@@ -15,6 +14,7 @@ $hoverParrafos: #0c3e3c;
 $marronOscuro: #321f1f;
 $turquesa: #5fc199;
 $azulOscuro: #20114b;
+$gradient: linear-gradient(180deg, rgba(#0dcaf0, .15), rgba(#fff, 0));
 
 /* ************** ANIMACIONES ******************** */
 
@@ -45,39 +45,43 @@ $azulOscuro: #20114b;
 }
 
 /*   ********************** CLASES BOOTSTRAP ******************** */
-.navbar {
-  background-color: $colorNav;
-  transition: 3s;
-  min-height: 20vh;
-  font-size: 1.8rem;
-  margin: auto, 3rem;
 
-}
-
-a {
-  padding: auto;
-  margin: auto;
-
-
-
-  &:hover {
-    border-radius: 0.5rem;
-    border-bottom: 0.1rem solid black;
-    background-color: $hoverItemNav;
-    font-size: 2rem;
-    padding: 0, 1rem;
-  }
-}
+/* **************** BODY y MAIN *****(CLASE DE BOOTSTRAP) */
 
 .container-fluid {
   margin: 0;
   padding: 0;
 
   main {
-    background-color: $colorBlancoDebil;
+    background-color: rgb(170, 159, 88);
     padding: 2rem;
   }
 }
+
+/*  **************************** NAV DE BOOTSTRAP  ********************/
+.navbar {
+  background-color: $colorNav;
+  transition: 3s;
+  min-height: 17vh;
+  font-size: 1.6rem;
+  padding: 3rem;
+
+  a {
+    color: $colorBlancoDebil;
+    padding: auto;
+    margin: auto, 3rem;
+
+    &:hover {
+      border-radius: 0.5rem;
+      border-bottom: 0.1rem solid black;
+      background-color: $hoverItemNav;
+      font-size: 1.7rem;
+      padding: 0, 1rem;
+    }
+  }
+}
+
+/*   *************** BOTONES (CLASE DE BOOTSTRAP) ********  */
 
 .btn-primary {
   background-color: $verdeOscuro;
@@ -90,11 +94,9 @@ a {
   }
 }
 
-.bg-gradient {
-  background-color: #dee2e6;
-}
+/* ***************** clases CSS ************************** */
 
-/* ***************** clases inicio ************************** */
+/*    ************** HOME (INICIO) *************   */
 .news li p {
   font-weight: bold;
   animation-duration: 4s;
@@ -158,17 +160,6 @@ a {
   }
 }
 
-.icon {
-  margin: 2rem;
-  width: 4rem;
-  transition: 1s, border 0.5s;
-
-  &:hover {
-    border-bottom: 3px solid $blancoHovers;
-    width: 3.5rem;
-  }
-}
-
 .honorarios {
   text-align: center;
 }
@@ -201,13 +192,24 @@ a {
 
 footer {
   width: 100%;
+
+  .footerClass {
+    background-color: $colorNav;
+    height: 8rem;
+
+    img {
+      margin: 2rem;
+      width: 4rem;
+      transition: 1s, border 0.5s;
+
+      &:hover {
+        border-bottom: 3px solid $blancoHovers;
+        width: 3.5rem;
+      }
+    }
+  }
 }
 
-.footerClass {
-  background-color: $colorNav;
-  height: 30vh;
-
-  div {
-    padding: 1rem;
-  }
+.citas p {
+  color: $marronOscuro;
 }
