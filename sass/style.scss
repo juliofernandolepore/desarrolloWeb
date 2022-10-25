@@ -5,6 +5,7 @@
 $gray-600: #6c757d;
 $grisOscuro: #4a4848;
 $colorNav: #0f6162;
+$hoverItemNav: #178486;
 $colorRojo: #da1616;
 $rojoDebil: #dc3545;
 $colorBlancoDebil: #f3f4f8;
@@ -61,8 +62,8 @@ a {
 
   &:hover {
     border-radius: 0.5rem;
-    border-bottom: 0.1rem solid $marronOscuro;
-    background-color: $blancoHovers;
+    border-bottom: 0.1rem solid black;
+    background-color: $hoverItemNav;
     font-size: 2rem;
     padding: 0, 1rem;
   }

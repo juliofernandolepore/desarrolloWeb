@@ -80,8 +80,8 @@ a {
 }
 a:hover {
   border-radius: 0.5rem;
-  border-bottom: 0.1rem solid #321f1f;
-  background-color: #f8f2f2;
+  border-bottom: 0.1rem solid black;
+  background-color: #178486;
   font-size: 2rem;
   padding: 0, 1rem;
 }
