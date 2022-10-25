@@ -14,11 +14,12 @@ $hoverParrafos: #0c3e3c;
 $marronOscuro: #321f1f;
 $turquesa: #5fc199;
 $azulOscuro: #20114b;
-$gradient: linear-gradient(180deg, rgba(#0dcaf0, .15), rgba(#fff, 0));
-
+$marronBackground: rgb(170, 159, 88);
+$marronBackgroundHover: rgb(184, 174, 108);
 /* ************** ANIMACIONES ******************** */
 
 @keyframes changeColor {
+
   from {
     color: $colorBlancoDebil;
     padding: 0px 1px;
@@ -53,7 +54,7 @@ $gradient: linear-gradient(180deg, rgba(#0dcaf0, .15), rgba(#fff, 0));
   padding: 0;
 
   main {
-    background-color: rgb(170, 159, 88);
+    background-color: $marronBackground;
     padding: 2rem;
   }
 }
@@ -131,12 +132,15 @@ $gradient: linear-gradient(180deg, rgba(#0dcaf0, .15), rgba(#fff, 0));
   }
 }
 
-.efectoFondo2 {
-  transition: 1s;
+/*  ********* EFECTOS CSS **************  */
+
+.serviciosProfesionales {
+  transition: 2s;
 
   &:hover {
+    border-radius: 1rem;
     border: solid $blancoHovers;
-
+    background-color: $marronBackgroundHover;
   }
 
   li {
@@ -146,22 +150,27 @@ $gradient: linear-gradient(180deg, rgba(#0dcaf0, .15), rgba(#fff, 0));
 
     &:hover {
       color: $blancoHovers;
-      transition: 1s;
+
+      transition: 2s;
     }
   }
 }
 
-.efectoFondo3 a {
-  transition: 1s;
-  color: $azulOscuro;
+.honorarios {
+  width: auto;
+  text-align: center;
+  transition: 4s;
 
   &:hover {
-    color: $blancoHovers;
+    border-radius: 1rem;
+    background-color: $hoverItemNav;
+    transition-duration: 5s;
   }
 }
 
-.honorarios {
-  text-align: center;
+.carrusel {
+  @include margenes(1rem);
+  min-height: 300px;
 }
 
 /* ********************** VIDEOS ****************** */

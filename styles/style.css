@@ -148,30 +148,40 @@ h2 {
   padding: 5px;
 }
 
-.efectoFondo2 {
-  transition: 1s;
+/*  ********* EFECTOS CSS **************  */
+.serviciosProfesionales {
+  transition: 2s;
 }
-.efectoFondo2:hover {
+.serviciosProfesionales:hover {
+  border-radius: 1rem;
   border: solid #f8f2f2;
+  background-color: rgb(184, 174, 108);
 }
-.efectoFondo2 li a {
+.serviciosProfesionales li a {
   color: #dc3545;
 }
-.efectoFondo2 li:hover {
+.serviciosProfesionales li:hover {
   color: #f8f2f2;
-  transition: 1s;
-}
-
-.efectoFondo3 a {
-  transition: 1s;
-  color: #20114b;
-}
-.efectoFondo3 a:hover {
-  color: #f8f2f2;
+  transition: 2s;
 }
 
 .honorarios {
+  width: auto;
   text-align: center;
+  transition: 4s;
+}
+.honorarios:hover {
+  border-radius: 1rem;
+  background-color: #178486;
+  transition-duration: 5s;
+}
+
+.carrusel {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  min-height: 300px;
 }
 
 /* ********************** VIDEOS ****************** */
