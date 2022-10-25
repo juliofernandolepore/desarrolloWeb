@@ -1,41 +1,23 @@
-/* *********************** FUENTES ******************** */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
-@import "mixins";
-
-
-/* *********************  VARIABLES ******************** */
-$color: rgb(15, 97, 98);
-$colorRojo: rgb(218, 22, 22);
-$rojoDebil: #dc3545;
-$colorBlancoDebil: rgb(243, 244, 248);
-$verdeOscuro : rgb(26, 35, 35);
-$blancoHovers: rgb(248, 242, 242);
-$hoverParrafos: rgb(12, 62, 60);
-$marronOscuro: rgb(50, 31, 31);
-$turquesa: rgb(95, 193, 153);
-$azulOscuro: rgb(32, 17, 75);
-
-
-/*  ********************* RESET ********************** */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-h2 {
-  font-size: medium;
-}
+@import 'mixins', 'nav', 'reset', 'fonts', 'colors', 'animaciones', 'footer';
 
 /*   ********************** CLASES BOOTSTRAP ******************** */
+
+.nav-bar .navbar-expand-lg {
+  background-color: $colorNav;
+  transition: 2s;
+
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+
+    &:hover {
+      border-bottom: 0.1rem solid $blancoHovers;
+      color: $blancoHovers;
+    }
+  }
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -57,6 +39,9 @@ h2 {
   }
 }
 
+.bg-gradient {
+  background-color: #dee2e6;
+}
 
 
 /* ***************** clases inicio ************************** */
@@ -137,66 +122,6 @@ h2 {
 
 .honorarios {
   text-align: center;
-}
-
-/*  ******* NAVBAR ******** */
-.colorFondo {
-  background-color: $color;
-  transition: 2s;
-
-  a {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: large;
-
-    &:hover {
-      border-bottom: 0.1rem solid $blancoHovers;
-      color: $blancoHovers;
-    }
-  }
-}
-
-/* ************** ANIMACIONES ******************** */
-
-@keyframes changeColor {
-  from {
-    color: $colorBlancoDebil;
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-
-  to {
-    color: $verdeOscuro;
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-/* ******************* FOOTER **************** */
-footer {
-  width: 100%;
-}
-
-.footerClass {
-  background-color: $color;
-  height: 15vh;
-
-  div {
-    height: auto;
-  }
 }
 
 /* ********************** VIDEOS ****************** */
