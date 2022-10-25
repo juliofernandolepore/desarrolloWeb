@@ -20,18 +20,79 @@ h2 {
 
 /* *********************** FUENTES ******************** */
 /* *********************  VARIABLES ******************** */
+/* ************** ANIMACIONES ******************** */
+@-webkit-keyframes changeColor {
+  from {
+    color: #f3f4f8;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+  to {
+    color: #1a2323;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+@keyframes changeColor {
+  from {
+    color: #f3f4f8;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+  to {
+    color: #1a2323;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /*   ********************** CLASES BOOTSTRAP ******************** */
+nav {
+  display: flex;
+  height: 20vh;
+  font-size: 1.5rem;
+  background-color: #0f6162;
+  transition: 2s;
+}
+nav a {
+  margin: 2rem;
+  font-size: large;
+}
+nav a:hover {
+  border-bottom: 0.1rem solid #f8f2f2;
+  color: #f8f2f2;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
 }
 .container-fluid main {
-  background-color: rgb(243, 244, 248);
+  background-color: #f3f4f8;
   padding: 2rem;
 }
 
 .btn-primary {
-  background-color: rgb(26, 35, 35);
+  background-color: #1a2323;
 }
 .btn-primary:hover {
   /* modificacion de backgroud-color en hover de bootstrap, no me permite
@@ -40,6 +101,28 @@ h2 {
   transition: 1s;
 }
 
+.bg-gradient {
+  background-color: #dee2e6;
+}
+
+/*  ******* NAVBAR ******** */
+/*
+.colorFondo {
+  background-color: $colorNav;
+  transition: 2s;
+
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+
+    &:hover {
+      border-bottom: 0.1rem solid $blancoHovers;
+      color: $blancoHovers;
+    }
+  }
+}
+*/
 /* ***************** clases inicio ************************** */
 .news li p {
   font-weight: bold;
@@ -49,9 +132,9 @@ h2 {
           animation-name: slidein;
 }
 .news li p:hover {
-  color: rgb(218, 22, 22);
+  color: #da1616;
   padding-left: 50%;
-  border-left: 5px solid rgb(218, 22, 22);
+  border-left: 5px solid #da1616;
   transition: 1.5s;
   text-transform: uppercase;
   font-weight: 1200;
@@ -83,111 +166,36 @@ h2 {
   transition: 1s;
 }
 .efectoFondo2:hover {
-  border: solid rgb(248, 242, 242);
-  background-color: rgb(15, 97, 98);
+  border: solid #f8f2f2;
 }
 .efectoFondo2 li a {
   color: #dc3545;
 }
 .efectoFondo2 li:hover {
-  color: rgb(248, 242, 242);
+  color: #f8f2f2;
   transition: 1s;
 }
 
 .efectoFondo3 a {
   transition: 1s;
-  color: rgb(32, 17, 75);
+  color: #20114b;
 }
 .efectoFondo3 a:hover {
-  color: rgb(248, 242, 242);
+  color: #f8f2f2;
 }
 
 .icon {
-  padding: 5px;
-  margin: 5px;
-  width: 3rem;
+  margin: 2rem;
+  width: 4rem;
   transition: 1s, border 0.5s;
 }
 .icon:hover {
-  border-bottom: 3px solid rgb(248, 242, 242);
-  width: 2rem;
+  border-bottom: 3px solid #f8f2f2;
+  width: 3.5rem;
 }
 
 .honorarios {
   text-align: center;
-}
-
-/*  ******* NAVBAR ******** */
-.colorFondo {
-  background-color: rgb(15, 97, 98);
-  transition: 2s;
-}
-.colorFondo a {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-size: large;
-}
-.colorFondo a:hover {
-  border-bottom: 0.1rem solid rgb(248, 242, 242);
-  color: rgb(248, 242, 242);
-}
-
-/* ************** ANIMACIONES ******************** */
-@-webkit-keyframes changeColor {
-  from {
-    color: rgb(243, 244, 248);
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-  to {
-    color: rgb(26, 35, 35);
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-}
-@keyframes changeColor {
-  from {
-    color: rgb(243, 244, 248);
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-  to {
-    color: rgb(26, 35, 35);
-    padding: 0px 1px;
-    margin: 0px 1px;
-  }
-}
-@-webkit-keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-/* ******************* FOOTER **************** */
-footer {
-  width: 100%;
-}
-
-.footerClass {
-  background-color: rgb(15, 97, 98);
-  height: 15vh;
-}
-.footerClass div {
-  height: auto;
 }
 
 /* ********************** VIDEOS ****************** */
@@ -208,7 +216,7 @@ footer {
   transition: 1.5s;
 }
 .youtube:hover {
-  color: rgb(248, 242, 242);
+  color: #f8f2f2;
 }
 .youtube:hover {
   border-radius: 12%;
@@ -218,7 +226,7 @@ footer {
 /* ****************************** GRIDS ************************* */
 .parrafo, .arancelesDev, .arancelesAb {
   font-size: medium;
-  color: rgb(50, 31, 31);
+  color: #321f1f;
   margin: 15px, 0;
 }
 
@@ -249,4 +257,17 @@ footer {
   grid-area: otrosRepos;
   padding: 3px 0;
   margin: 3px 0;
+}
+
+/* ******************* FOOTER **************** */
+footer {
+  width: 100%;
+}
+
+.footerClass {
+  background-color: #0f6162;
+  height: 30vh;
+}
+.footerClass div {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

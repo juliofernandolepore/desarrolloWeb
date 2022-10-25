@@ -1,14 +1,59 @@
-@import 'mixins', 'nav', 'reset', 'fonts', 'colors', 'animaciones', 'footer';
+@import 'mixins', 'reset', 'fonts';
+
+
+/* *********************  VARIABLES ******************** */
+$gray-600: #6c757d;
+$grisOscuro: #4a4848;
+$colorNav: #0f6162;
+$colorRojo: #da1616;
+$rojoDebil: #dc3545;
+$colorBlancoDebil: #f3f4f8;
+$verdeOscuro : #1a2323;
+$blancoHovers: #f8f2f2;
+$hoverParrafos: #0c3e3c;
+$marronOscuro: #321f1f;
+$turquesa: #5fc199;
+$azulOscuro: #20114b;
+
+/* ************** ANIMACIONES ******************** */
+
+@keyframes changeColor {
+  from {
+    color: $colorBlancoDebil;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+
+  to {
+    color: $verdeOscuro;
+    padding: 0px 1px;
+    margin: 0px 1px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 /*   ********************** CLASES BOOTSTRAP ******************** */
 
-.nav-bar .navbar-expand-lg {
+nav {
+  display: flex;
+  height: 20vh;
+  font-size: 1.5rem;
   background-color: $colorNav;
   transition: 2s;
 
   a {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     font-size: large;
 
     &:hover {
@@ -43,6 +88,24 @@
   background-color: #dee2e6;
 }
 
+/*  ******* NAVBAR ******** */
+/*
+.colorFondo {
+  background-color: $colorNav;
+  transition: 2s;
+
+  a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: large;
+
+    &:hover {
+      border-bottom: 0.1rem solid $blancoHovers;
+      color: $blancoHovers;
+    }
+  }
+}
+*/
 
 /* ***************** clases inicio ************************** */
 .news li p {
@@ -84,7 +147,7 @@
 
   &:hover {
     border: solid $blancoHovers;
-    background-color: $color;
+
   }
 
   li {
@@ -109,14 +172,13 @@
 }
 
 .icon {
-  padding: 5px;
-  margin: 5px;
-  width: 3rem;
+  margin: 2rem;
+  width: 4rem;
   transition: 1s, border 0.5s;
 
   &:hover {
     border-bottom: 3px solid $blancoHovers;
-    width: 2rem;
+    width: 3.5rem;
   }
 }
 
@@ -186,4 +248,19 @@
   grid-area: otrosRepos;
   padding: 3px 0;
   margin: 3px 0;
+}
+
+/* ******************* FOOTER **************** */
+
+footer {
+  width: 100%;
+}
+
+.footerClass {
+  background-color: $colorNav;
+  height: 30vh;
+
+  div {
+    padding: 1rem;
+  }
 }

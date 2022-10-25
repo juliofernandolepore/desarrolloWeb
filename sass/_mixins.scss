@@ -3,7 +3,7 @@
     height: $alto;
 }
 
-@mixin margenes($superior: 2px, $derecho: 2px, $inferior: 1px, $izquierdo: 2px) {
+@mixin margenes($superior: 1rem, $derecho: 1rem, $inferior: 1rem, $izquierdo: 1rem) {
     margin-top: $superior;
     margin-right: $derecho;
     margin-bottom: $inferior;
