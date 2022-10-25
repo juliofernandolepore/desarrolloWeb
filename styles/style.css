@@ -66,20 +66,24 @@ h2 {
   }
 }
 /*   ********************** CLASES BOOTSTRAP ******************** */
-nav {
-  display: flex;
-  height: 20vh;
-  font-size: 1.5rem;
+.navbar {
   background-color: #0f6162;
-  transition: 2s;
+  transition: 3s;
+  min-height: 20vh;
+  font-size: 1.8rem;
+  margin: auto, 3rem;
 }
-nav a {
-  margin: 2rem;
-  font-size: large;
+
+a {
+  padding: auto;
+  margin: auto;
 }
-nav a:hover {
-  border-bottom: 0.1rem solid #f8f2f2;
-  color: #f8f2f2;
+a:hover {
+  border-radius: 0.5rem;
+  border-bottom: 0.1rem solid #321f1f;
+  background-color: #f8f2f2;
+  font-size: 2rem;
+  padding: 0, 1rem;
 }
 
 .container-fluid {
@@ -105,24 +109,6 @@ nav a:hover {
   background-color: #dee2e6;
 }
 
-/*  ******* NAVBAR ******** */
-/*
-.colorFondo {
-  background-color: $colorNav;
-  transition: 2s;
-
-  a {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: large;
-
-    &:hover {
-      border-bottom: 0.1rem solid $blancoHovers;
-      color: $blancoHovers;
-    }
-  }
-}
-*/
 /* ***************** clases inicio ************************** */
 .news li p {
   font-weight: bold;
@@ -221,42 +207,6 @@ nav a:hover {
 .youtube:hover {
   border-radius: 12%;
   border: 3px solid;
-}
-
-/* ****************************** GRIDS ************************* */
-.parrafo, .arancelesDev, .arancelesAb {
-  font-size: medium;
-  color: #321f1f;
-  margin: 15px, 0;
-}
-
-.arancelesAb {
-  grid-area: abogado;
-}
-
-.arancelesDev {
-  grid-area: developer;
-}
-
-.repos {
-  text-align: center;
-  padding: auto;
-}
-.repos h1 a {
-  color: black;
-  font-size: 1.5rem;
-}
-
-.gitHubRepos {
-  grid-area: gitHub;
-  padding: 3px 0;
-  margin: 3px 0;
-}
-
-.otrosRepos {
-  grid-area: otrosRepos;
-  padding: 3px 0;
-  margin: 3px 0;
 }
 
 /* ******************* FOOTER **************** */

@@ -44,22 +44,27 @@ $azulOscuro: #20114b;
 }
 
 /*   ********************** CLASES BOOTSTRAP ******************** */
-
-nav {
-  display: flex;
-  height: 20vh;
-  font-size: 1.5rem;
+.navbar {
   background-color: $colorNav;
-  transition: 2s;
+  transition: 3s;
+  min-height: 20vh;
+  font-size: 1.8rem;
+  margin: auto, 3rem;
 
-  a {
-    margin: 2rem;
-    font-size: large;
+}
 
-    &:hover {
-      border-bottom: 0.1rem solid $blancoHovers;
-      color: $blancoHovers;
-    }
+a {
+  padding: auto;
+  margin: auto;
+
+
+
+  &:hover {
+    border-radius: 0.5rem;
+    border-bottom: 0.1rem solid $marronOscuro;
+    background-color: $blancoHovers;
+    font-size: 2rem;
+    padding: 0, 1rem;
   }
 }
 
@@ -87,25 +92,6 @@ nav {
 .bg-gradient {
   background-color: #dee2e6;
 }
-
-/*  ******* NAVBAR ******** */
-/*
-.colorFondo {
-  background-color: $colorNav;
-  transition: 2s;
-
-  a {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: large;
-
-    &:hover {
-      border-bottom: 0.1rem solid $blancoHovers;
-      color: $blancoHovers;
-    }
-  }
-}
-*/
 
 /* ***************** clases inicio ************************** */
 .news li p {
@@ -208,46 +194,6 @@ nav {
     border-radius: 12%;
     border: 3px solid;
   }
-}
-
-/* ****************************** GRIDS ************************* */
-@at-root .parrafo {
-  font-size: medium;
-  color: $marronOscuro;
-  margin: 15px, 0;
-}
-
-.arancelesAb {
-  grid-area: abogado;
-  @extend .parrafo
-}
-
-.arancelesDev {
-  grid-area: developer;
-  @extend .parrafo
-}
-
-.repos {
-  text-align: center;
-  padding: auto;
-
-
-  h1 a {
-    color: black;
-    font-size: 1.5rem;
-  }
-}
-
-.gitHubRepos {
-  grid-area: gitHub;
-  padding: 3px 0;
-  margin: 3px 0;
-}
-
-.otrosRepos {
-  grid-area: otrosRepos;
-  padding: 3px 0;
-  margin: 3px 0;
 }
 
 /* ******************* FOOTER **************** */
